@@ -1,6 +1,16 @@
 ---
-layout: default
+layout: landing
 permalink: /contact
 ---
 
-#CONTACT
+<div class="container justify-center">
+  {% include header.html %}
+  <div class="column align-center justify-center bg">
+    <form action="" class="contact-form">
+      <input type="text" placeholder="Subject" required>
+      <input type="text" placeholder="Email" required>
+      <textarea name="text" placeholder="Text" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</div>
