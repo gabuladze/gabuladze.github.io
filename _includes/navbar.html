@@ -1,14 +1,14 @@
 <ul class='navbar'>
   <li>
-    <a href="{{ site.baseUrl }}{% link about.html %}">About</a>
+    <a href="{{ site.baseUrl }}{% link about.html %}" class="{% if page.url == '/about' %}active{% endif %}">About</a>
   </li>
   <li>
-    <a href="{{ site.baseUrl }}{% link blog.html %}">Blog</a>
+    <a href="{{ site.baseUrl }}{% link blog.html %}" class="{% if page.url == '/blog' %}active{% endif %}">Blog</a>
   </li>
   <li>
-    <a href="{{ site.baseUrl }}{% link portfolio.html %}">Portfolio</a>
+    <a href="{{ site.baseUrl }}{% link portfolio.html %}" class="{% if page.url == '/portfolio' %}active{% endif %}">Portfolio</a>
   </li>
   <li>
-    <a href="{{ site.baseUrl }}{% link contact.html %}">Contact</a>
+    <a href="{{ site.baseUrl }}{% link contact.html %}" class="{% if page.url == '/contact' %}active{% endif %}">Contact</a>
   </li>
 </ul>
