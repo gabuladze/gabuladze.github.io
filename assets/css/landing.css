@@ -1,0 +1,62 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+  height:100%;
+}
+
+body {
+  margin: 0;
+}
+
+ul.navbar {
+  list-style: none;
+  padding-left: 0;
+  align-self: center;
+}
+
+ul.navbar li {
+  float: left;
+}
+
+ul.navbar li {
+  margin-right: 10px;
+}
+
+ul.navbar li:last-child {
+  margin-right: 0;
+}
+
+ul.navbar li a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, .5);
+  font-size: 1.5em;
+  text-transform: lowercase;
+}
+
+ul.navbar li a:hover {
+  color: rgba(0, 0, 0, .8);
+}
+
+div.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.column {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+div.container h1 {
+  font-size: 3em;
+}
+
+@media screen and (max-width: 600px) {
+
+}
+  
