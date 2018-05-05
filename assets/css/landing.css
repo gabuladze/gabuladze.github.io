@@ -10,6 +10,11 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, .7);
+}
+
 ul.navbar {
   list-style: none;
   padding-left: 0;
@@ -35,28 +40,72 @@ ul.navbar li a {
   text-transform: lowercase;
 }
 
+ul.navbar li a.active {
+  text-transform: uppercase;
+}
+
+.header ul.navbar li a {
+  font-size: 1em;
+}
+
 ul.navbar li a:hover {
   color: rgba(0, 0, 0, .8);
+}
+
+div.header {
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 0 15px rgba(0, 0, 0, .03);
 }
 
 div.container {
   height: 100%;
   display: flex;
-  justify-content: center;
+}
+
+div.align-center {
   align-items: center;
 }
 
+div.justify-center {
+  justify-content: center;
+}
+
+div.self-align-center {
+  align-self: center;
+}
+
+div.self-justify-center {
+  justify-self: center;
+}
+
 div.column {
+  width: 100%;
   display: flex;
   flex-direction: column;
+}
+
+div.row {
+  flex-direction: row;
+  width: 90%;
+}
+
+p.about-text {
+  text-align: justify;
+}
+
+div.bg {
+  background: rgba(0, 0, 0, .05);
+}
+
+div.container h1.landing {
+  font-size: 3em;
   text-align: center;
 }
 
-div.container h1 {
-  font-size: 3em;
-}
-
-@media screen and (max-width: 600px) {
-
+@media screen and (max-width: 800px) {
+  div.container {
+    flex-flow: column;
+  }
 }
   
