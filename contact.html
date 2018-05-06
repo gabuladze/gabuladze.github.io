@@ -9,9 +9,10 @@ permalink: /contact
     <div class="row">
       <h3>Drop me a message</h3>
     </div>
-    <form action="" class="contact-form">
-      <input type="text" placeholder="Subject" required>
-      <input type="text" placeholder="Email" required>
+    <form action="https://formspree.io/itisabu@gmail.com" method="POST" class="contact-form">
+      <input type="hidden" name="_next" value="{{ site.baseUrl }}{{ link thanks.html }}" />
+      <input type="text" name="subject" placeholder="Subject" required>
+      <input type="text" name="email" placeholder="Email" required>
       <textarea name="text" placeholder="Text" required></textarea>
       <button type="submit">Send</button>
     </form>
