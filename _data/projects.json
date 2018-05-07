@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Eth-price",
+    "url": "https://eth-price.com",
+    "thumbnail": "/assets/img/eth-price-thumb.png",
+    "subtitle": "Cryptocurrency dashboard with realtime statistics",
+    "description": "I worked on this project with a team of developers at Biznetx LLC. I was responsible for the development of back-end services: the REST API, socket server & front-end server."
+  },
+  {
+    "title": "Eldocs.net",
+    "url": "https://eldocs.net",
+    "thumbnail": "/assets/img/eldocs-thumb.png",
+    "subtitle": "Project management for NGOs",
+    "description": "I worked on this project with a team of developers at Biznetx LLC. I was responsible for the development of the back-end api. also worked on the front-end code from time to time."
+  },
+  {
+    "title": "Bella on Demand Concierge",
+    "url": "https://bellaondemandconcierge.com",
+    "subtitle": "Concierge application for Bella on Demand",
+    "thumbnail": "/assets/img/bella-thumb.svg",
+    "description": "I worked on this project with a team of developers at Biznetx LLC. I was responsible for the development of the frontend. I also worked on the front-end code from time to time."
+  }
+]
