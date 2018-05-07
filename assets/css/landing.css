@@ -84,19 +84,14 @@ div.padding-20 {
 }
 
 div.column {
-  width: 100%;
   display: flex;
+  flex: 1;
   flex-direction: column;
 }
 
 div.row {
   flex-direction: row;
   width: 90%;
-}
-
-div.row-100 {
-  flex-direction: row;
-  width: 100%;
 }
 
 div.scrollable {
@@ -181,9 +176,18 @@ div.project-card p.project-description img {
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
   div.container {
     flex-flow: column;
+    height: 100vh;
+  }
+
+  div.column {
+    flex: 1;
+  }
+
+  div.header {
+    flex: 0.3;
   }
 }
   
