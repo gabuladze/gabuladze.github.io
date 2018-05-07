@@ -162,6 +162,7 @@ div.project-card {
   border-radius: 5px;
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .03);
   margin-bottom: 15px;
+  overflow: auto;
 }
 
 div.project-card h2 {
@@ -170,7 +171,15 @@ div.project-card h2 {
 
 div.project-card p {
   margin-bottom: 0;
+  text-align: justify;
 }
+
+div.project-card p.project-description img {
+  max-width: 150px;
+  float:  left;
+  margin-right: 15px;
+}
+
 
 @media screen and (max-width: 800px) {
   div.container {
