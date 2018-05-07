@@ -160,12 +160,18 @@ div.project-card {
   overflow: auto;
 }
 
+div.project-card a {
+  margin-bottom: 0;
+}
+
 div.project-card h2 {
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 div.project-card p {
-  margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 15px;
   text-align: justify;
 }
 
