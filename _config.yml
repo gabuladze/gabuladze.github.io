@@ -16,7 +16,7 @@
 title: Giorgi Abuladze's personal website
 email: itisabu@gmail.com
 description: >- # this means to ignore newlines until next config var
-  Hi! I my name is Abu and I'm a geek. Welcome to my personal website
+  Hi! I'm Giorgi Abuladze, welcome to my website.
 keywords: "tech,geek,programming,linux,tux,lfs,from scratch,blog,personal,nodejs,javascript,backend,frontend,fullstack"
 author: "Giorgi Abuladze"
 baseurl: "" # the subpath of your site, e.g. /blog
