@@ -1,10 +1,31 @@
 [
   {
+    "title": "Wenu",
+    "url": "https://wenu.io",
+    "thumbnail": "/assets/img/wenu-thumb.png",
+    "subtitle": "Ordering made simple",
+    "description": "I worked on this project with a team of developers at Biznetx LLC. I was responsible for the refactoring/improving back-end services and improving coherency of the back-end and client side."
+  },
+  {
+    "title": "Vintage",
+    "url": "",
+    "thumbnail": "/assets/img/vintage-thumb.png",
+    "subtitle": "Online market that makes buying & selling stuff simple and fun",
+    "description": "I worked on this project with a team of developers at Biznetx LLC. I was responsible for the development of back-end services and improving coherency of the back-end and client side."
+  },
+  {
     "title": "Eth-price",
     "url": "https://eth-price.com",
     "thumbnail": "/assets/img/eth-price-thumb.png",
     "subtitle": "Cryptocurrency dashboard with realtime statistics",
     "description": "I worked on this project with a team of developers at Biznetx LLC. I was responsible for the development of back-end services: the REST API, socket server & front-end server."
+  },
+  {
+    "title": "Tbilisi B&RF",
+    "url": "https://play.google.com/store/apps/details?id=com.tbrf",
+    "thumbnail": "/assets/img/tbilisibrf-thumb.png",
+    "subtitle": "Mobile app for participants of Tbilisi B&RF",
+    "description": "I worked on this project with a team of developers at Biznetx LLC. I was responsible for the development of back-end services and improving coherency of the back-end and client side."
   },
   {
     "title": "Eldocs.net",
