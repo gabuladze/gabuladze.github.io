@@ -1,44 +1,58 @@
 [
   {
+    "title": "Agronavti",
+    "url": "https://play.google.com/store/apps/details?id=ge.org.gfa.gfa",
+    "thumbnail": "/assets/img/agronavti-thumb.png",
+    "subtitle": "Aplication created for farmers",
+    "description": "I worked on this project with a team of developers at Biznetx LLC. I was responsible for the refactoring/improving back-end services and improving coherency of the back-end and client side.",
+    "status": "COMPLETED (ON MAINTENANCE)"
+  },
+  {
     "title": "Wenu",
     "url": "https://wenu.io",
     "thumbnail": "/assets/img/wenu-thumb.png",
     "subtitle": "Ordering made simple",
-    "description": "I worked on this project with a team of developers at Biznetx LLC. I was responsible for the refactoring/improving back-end services and improving coherency of the back-end and client side."
+    "description": "I worked on this project with a team of developers at Biznetx LLC. I was responsible for the refactoring/improving back-end services and improving coherency of the back-end and client side.",
+    "status": "COMPLETED (ON MAINTENANCE)"
   },
   {
     "title": "Vintage",
-    "url": "",
+    "url": "https://evintage.io",
     "thumbnail": "/assets/img/vintage-thumb.png",
     "subtitle": "Online market that makes buying & selling stuff simple and fun",
-    "description": "I worked on this project with a team of developers at Biznetx LLC. I was responsible for the development of back-end services and improving coherency of the back-end and client side."
+    "description": "I worked on this project with a team of developers at Biznetx LLC. I was responsible for the development of back-end services and improving coherency of the back-end and client side.",
+    "status": "COMPLETED (ON MAINTENANCE)"
   },
   {
     "title": "Eth-price",
     "url": "https://eth-price.com",
     "thumbnail": "/assets/img/eth-price-thumb.png",
     "subtitle": "Cryptocurrency dashboard with realtime statistics",
-    "description": "I worked on this project with a team of developers at Biznetx LLC. I was responsible for the development of back-end services: the REST API, socket server & front-end server."
+    "description": "I worked on this project with a team of developers at Biznetx LLC. I was responsible for the development of back-end services: the REST API, socket server & front-end server.",
+    "status": "COMPLETED (ON MAINTENANCE)"
   },
   {
     "title": "Tbilisi B&RF",
     "url": "https://play.google.com/store/apps/details?id=com.tbrf",
     "thumbnail": "/assets/img/tbilisibrf-thumb.png",
     "subtitle": "Mobile app for participants of Tbilisi B&RF",
-    "description": "I worked on this project with a team of developers at Biznetx LLC. I was responsible for the development of back-end services and improving coherency of the back-end and client side."
+    "description": "I worked on this project with a team of developers at Biznetx LLC. I was responsible for the development of back-end services and improving coherency of the back-end and client side.",
+    "status": "COMPLETED"
   },
   {
     "title": "Eldocs.net",
     "url": "https://eldocs.net",
     "thumbnail": "/assets/img/eldocs-thumb.png",
     "subtitle": "Project management for NGOs",
-    "description": "I worked on this project with a team of developers at Biznetx LLC. I was responsible for the development of the back-end api. also worked on the front-end code from time to time."
+    "description": "I worked on this project with a team of developers at Biznetx LLC. I was responsible for the development of the back-end api. also worked on the front-end code from time to time.",
+    "status": "COMPLETED (ON MAINTENANCE)"
   },
   {
     "title": "Bella on Demand Concierge",
     "url": "https://bellaondemandconcierge.com",
     "subtitle": "Concierge application for Bella on Demand",
     "thumbnail": "/assets/img/bella-thumb.svg",
-    "description": "I worked on this project with a team of developers at Biznetx LLC. I was responsible for the development of the frontend. I also worked on the back-end code from time to time."
+    "description": "I worked on this project with a team of developers at Biznetx LLC. I was responsible for the development of the frontend. I also worked on the back-end code from time to time.",
+    "status": "COMPLETED"
   }
 ]
