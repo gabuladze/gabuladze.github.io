@@ -4,39 +4,39 @@
     "url": "https://play.google.com/store/apps/details?id=ge.org.gfa.gfa",
     "thumbnail": "/assets/img/agronavti-thumb.png",
     "subtitle": "Aplication created for farmers",
-    "description": "I worked on this project with a team of developers at Biznetx LLC. I was responsible for the refactoring/improving back-end services and improving coherency of the back-end and client side.",
-    "status": "COMPLETED (ON MAINTENANCE)"
+    "description": "Agronavti is a mobile app that allows Georgian farmers to obtain various agricultural information. I worked on this project with a team of developers at Biznetx LLC. I was responsible for the refactoring/improving back-end services and improving coherency of the back-end and client side.",
+    "status": "DEPLOYED (ONGOING)"
   },
   {
     "title": "Wenu",
     "url": "https://wenu.io",
     "thumbnail": "/assets/img/wenu-thumb.png",
     "subtitle": "Ordering made simple",
-    "description": "I worked on this project with a team of developers at Biznetx LLC. I was responsible for the refactoring/improving back-end services and improving coherency of the back-end and client side.",
-    "status": "COMPLETED (ON MAINTENANCE)"
+    "description": "Wenu is a suit of mobile & web applications that replaces classic paper menus and allows users to book tables, make orders, etc. I worked on this project with a team of developers at Biznetx LLC. I was responsible for the refactoring/improving back-end services and improving coherency of the back-end and client side.",
+    "status": "DEPLOYED (ONGOING)"
   },
   {
     "title": "Vintage",
     "url": "https://evintage.io",
     "thumbnail": "/assets/img/vintage-thumb.png",
     "subtitle": "Online market that makes buying & selling stuff simple and fun",
-    "description": "I worked on this project with a team of developers at Biznetx LLC. I was responsible for the development of back-end services and improving coherency of the back-end and client side.",
-    "status": "COMPLETED (ON MAINTENANCE)"
+    "description": "Vintage is a mobile app that allows users to sell & buy stuff easily. I worked on this project with a team of developers at Biznetx LLC. I was responsible for the development of back-end services and improving coherency of the back-end and client side.",
+    "status": "DEPLOYED (ONGOING)"
   },
   {
     "title": "Eth-price",
     "url": "https://eth-price.com",
     "thumbnail": "/assets/img/eth-price-thumb.png",
     "subtitle": "Cryptocurrency dashboard with realtime statistics",
-    "description": "I worked on this project with a team of developers at Biznetx LLC. I was responsible for the development of back-end services: the REST API, socket server & front-end server.",
-    "status": "COMPLETED (ON MAINTENANCE)"
+    "description": "Eth-price is a cryptocurrency price dashboard with realtime statistics. I worked on this project with a team of developers at Biznetx LLC. I was responsible for the development of back-end services: the REST API, socket server & front-end server.",
+    "status": "DEPLOYED (ON MAINTENANCE)"
   },
   {
     "title": "Tbilisi B&RF",
     "url": "https://play.google.com/store/apps/details?id=com.tbrf",
     "thumbnail": "/assets/img/tbilisibrf-thumb.png",
     "subtitle": "Mobile app for participants of Tbilisi B&RF",
-    "description": "I worked on this project with a team of developers at Biznetx LLC. I was responsible for the development of back-end services and improving coherency of the back-end and client side.",
+    "description": "Tbilisi B&RF is an app made specifically for Tbilisi B&RF. It allowed the forum participants to book meetings with each other, see the agenda, etc. I worked on this project with a team of developers at Biznetx LLC. I was responsible for the development of back-end services and improving coherency of the back-end and client side.",
     "status": "COMPLETED"
   },
   {
@@ -44,8 +44,8 @@
     "url": "https://eldocs.net",
     "thumbnail": "/assets/img/eldocs-thumb.png",
     "subtitle": "Project management for NGOs",
-    "description": "I worked on this project with a team of developers at Biznetx LLC. I was responsible for the development of the back-end api. also worked on the front-end code from time to time.",
-    "status": "COMPLETED (ON MAINTENANCE)"
+    "description": "Eldocs.net is a web application for NGOs where users can create & track projects. I worked on this project with a team of developers at Biznetx LLC. I was responsible for the development of the back-end api. also worked on the front-end code from time to time.",
+    "status": "DEPLOYED (ONGOING)"
   },
   {
     "title": "Bella on Demand Concierge",
