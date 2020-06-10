@@ -1,9 +1,10 @@
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Helvetica", "Roboto", sans-serif;
 }
 
-html, body {
-  height:100%;
+html,
+body {
+  height: 100%;
 }
 
 body {
@@ -12,7 +13,7 @@ body {
 
 a {
   text-decoration: none;
-  color: rgba(0, 0, 0, .7);
+  color: rgba(0, 0, 0, 0.7);
 }
 
 ul.navbar {
@@ -35,7 +36,7 @@ ul.navbar li:last-child {
 
 ul.navbar li a {
   text-decoration: none;
-  color: rgba(0, 0, 0, .5);
+  color: rgba(0, 0, 0, 0.5);
   font-size: 1.5em;
   text-transform: lowercase;
 }
@@ -49,13 +50,13 @@ ul.navbar li a.active {
 }
 
 ul.navbar li a:hover {
-  color: rgba(0, 0, 0, .8);
+  color: rgba(0, 0, 0, 0.8);
 }
 
 div.header {
   justify-content: center;
   align-items: center;
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .03);
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.03);
 }
 
 div.container {
@@ -65,6 +66,10 @@ div.container {
 
 div.align-center {
   align-items: center;
+}
+
+div.justify-start {
+  justify-content: start;
 }
 
 div.justify-center {
@@ -104,7 +109,7 @@ p.about-text {
 }
 
 div.bg {
-  background: rgba(0, 0, 0, .05);
+  background: rgba(0, 0, 0, 0.05);
 }
 
 div.container h1.landing {
@@ -116,7 +121,8 @@ form.contact-form {
   width: 90%;
 }
 
-.contact-form input, textarea {
+.contact-form input,
+textarea {
   display: block;
   width: 100%;
   margin-bottom: 15px;
@@ -134,16 +140,16 @@ form.contact-form {
 }
 
 .contact-form button {
-  background: rgba(0, 0, 0, .1);
+  background: rgba(0, 0, 0, 0.1);
   font-size: 1em;
   text-transform: uppercase;
   padding: 20px;
   cursor: pointer;
-  border: 1px solid rgba(0, 0, 0, .03);
+  border: 1px solid rgba(0, 0, 0, 0.03);
 }
 
 .contact-form button:hover {
-  background: rgba(0, 0, 0, .2);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 div.projects-container {
@@ -152,12 +158,10 @@ div.projects-container {
 
 div.project-card {
   background-color: rgba(255, 255, 255, 1);
-  width: 100%;
-  padding: 10px;
+  padding: 15px;
   border-radius: 5px;
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .03);
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.03);
   margin-bottom: 15px;
-  overflow: auto;
 }
 
 div.project-card a {
@@ -166,7 +170,7 @@ div.project-card a {
 
 div.project-card h2 {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 5px;
 }
 
 div.project-card p {
@@ -175,17 +179,25 @@ div.project-card p {
   text-align: justify;
 }
 
-div.project-card p.project-description img {
+div.project-card img {
   max-width: 150px;
-  float:  left;
-  margin-right: 15px;
+  max-height: 150px;
+  margin-right: 20px;
 }
 
-div.project-card h6 {
+div.project-card h5 {
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
+div.project-card ul {
+  margin-top: 5px;
+}
+
+div.project-card div.row.project {
+  display: flex;
+  width: 100%;
+}
 
 @media screen and (max-width: 1200px) {
   div.container {
@@ -200,5 +212,16 @@ div.project-card h6 {
   div.header {
     flex: 0.3;
   }
+
+  div.project-card img {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+
+  div.project-card div.row.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
 }
-  
