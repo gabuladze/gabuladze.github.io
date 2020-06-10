@@ -6,24 +6,31 @@ permalink: /portfolio
 <div class="container justify-center">
   {% include header.html %}
   <div class="column align-center bg scrollable">
-    <div class="row ">
-      <h3>Portfolio</h3>
-    </div>
+    <div class="row"><h3>Portfolio</h3></div>
 
     <div class="projects-container">
       {% for project in site.data.projects %}
-        <div class="project-card justify-center">
-          <a href="{{ project.url }}">
-            <h2>{{ project.title }}</h2>
-          </a>
-          <h6>{{ project.status }}</h6>
-          <p>{{ project.subtitle }}</p>
-          <p class="project-description">
-            <img src="{{ site.baseUrl }}{{ project.thumbnail }}" alt="{{ project.title }}">
-            {{ project.description }}
-          </p>
+      <div class="project-card">
+        <a href="{{ project.url }}"><h2>{{ project.title }}</h2></a>
+        <p>{{ project.subtitle }}</p>
+        <div class="project row">
+          <img src="{{ site.baseUrl }}{{ project.thumbnail }}" alt="{{ project.title }}" />
+          <div>
+            <p>{{ project.description }}</p>
+            <p><h5>MY RESPONSIBILITIES:</h5> {{ project.responsibilities }}</p>
+            {% if project.achievements != null %}
+            <h5>ACHIEVEMENTS:</h5>
+            <ul>
+              {% for achievement in project.achievements %}
+              <li>{{ achievement.value }} {{ achievement.name }}</li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+          </div>
         </div>
-      {% endfor %}  
+      </div>
+
+      {% endfor %}
     </div>
   </div>
 </div>
