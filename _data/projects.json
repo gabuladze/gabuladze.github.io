@@ -3,56 +3,83 @@
     "title": "Agronavti",
     "url": "https://play.google.com/store/apps/details?id=ge.org.gfa.gfa",
     "thumbnail": "/assets/img/agronavti-thumb.png",
-    "subtitle": "Aplication created for farmers",
-    "description": "Agronavti is a mobile app that allows Georgian farmers to obtain various agricultural information. I worked on this project with a team of developers at Biznetx LLC. I was responsible for the refactoring/improving back-end services and improving coherency of the back-end and client side.",
-    "status": "DEPLOYED (ONGOING)"
+    "subtitle": "Application for farmers",
+    "description": "Agronavti is a mobile app that allows Georgian farmers to obtain various agricultural information.",
+    "responsibilities": "Back-end development",
+    "achievements": [
+      {
+        "name": "Active Users",
+        "value": "> 4k"
+      }
+    ]
   },
   {
     "title": "Wenu",
     "url": "https://wenu.io",
     "thumbnail": "/assets/img/wenu-thumb.png",
     "subtitle": "Ordering made simple",
-    "description": "Wenu is a suit of mobile & web applications that replaces classic paper menus and allows users to book tables, make orders, etc. I worked on this project with a team of developers at Biznetx LLC. I was responsible for the refactoring/improving back-end services and improving coherency of the back-end and client side.",
-    "status": "DEPLOYED (ONGOING)"
+    "description": "Wenu is a suit of mobile & web applications that replaces classic paper menus and allows users to book tables, make orders, etc.",
+    "responsibilities": "Mostly back-end development, Occasianally front-end development",
+    "achievements": [
+      {
+        "name": "Active Users",
+        "value": "> 4k"
+      },
+      { "name": "", "value": "Won 100,000 ₾ in GITA's startup matching grants program" },
+      {
+        "name": "",
+        "value": "Was chosen by the USAID Economic Security Program to receive tailored assistance from a top global accelerator in Silicon Valley"
+      }
+    ]
   },
   {
     "title": "Vintage",
     "url": "https://evintage.io",
     "thumbnail": "/assets/img/vintage-thumb.png",
-    "subtitle": "Online market that makes buying & selling stuff simple and fun",
-    "description": "Vintage is a mobile app that allows users to sell & buy stuff easily. I worked on this project with a team of developers at Biznetx LLC. I was responsible for the development of back-end services and improving coherency of the back-end and client side.",
-    "status": "DEPLOYED (ONGOING)"
+    "subtitle": "Digital flea market",
+    "description": "Vintage is a mobile app that allows users to sell & buy stuff easily.",
+    "responsibilities": "Mostly back-end development, Occasianally front-end development",
+    "achievements": [
+      {
+        "name": "Active Users",
+        "value": "> 40k"
+      }
+    ]
   },
   {
     "title": "Eth-price",
     "url": "https://eth-price.com",
     "thumbnail": "/assets/img/eth-price-thumb.png",
     "subtitle": "Cryptocurrency dashboard with realtime statistics",
-    "description": "Eth-price is a cryptocurrency price dashboard with realtime statistics. I worked on this project with a team of developers at Biznetx LLC. I was responsible for the development of back-end services: the REST API, socket server & front-end server.",
-    "status": "DEPLOYED (ON MAINTENANCE)"
+    "description": "Eth-price is a cryptocurrency price dashboard with realtime statistics.",
+    "responsibilities": "Back-end development, Front-end development",
+    "achievements": null
   },
   {
     "title": "Tbilisi B&RF",
     "url": "https://play.google.com/store/apps/details?id=com.tbrf",
     "thumbnail": "/assets/img/tbilisibrf-thumb.png",
-    "subtitle": "Mobile app for participants of Tbilisi B&RF",
-    "description": "Tbilisi B&RF is an app made specifically for Tbilisi B&RF. It allowed the forum participants to book meetings with each other, see the agenda, etc. I worked on this project with a team of developers at Biznetx LLC. I was responsible for the development of back-end services and improving coherency of the back-end and client side.",
-    "status": "COMPLETED"
+    "subtitle": "Mobile app for Tbilisi B&RF participants",
+    "description": "Tbilisi B&RF is an app made specifically for Tbilisi B&RF. It allowed the forum participants to book meetings with each other, see the agenda, etc.",
+    "responsibilities": "Back-end development, Front-end development",
+    "achievements": null
   },
   {
     "title": "Eldocs.net",
     "url": "https://eldocs.net",
     "thumbnail": "/assets/img/eldocs-thumb.png",
-    "subtitle": "Project management for NGOs",
-    "description": "Eldocs.net is a web application for NGOs where users can create & track projects. I worked on this project with a team of developers at Biznetx LLC. I was responsible for the development of the back-end api. also worked on the front-end code from time to time.",
-    "status": "DEPLOYED (ONGOING)"
+    "subtitle": "Project management app for NGOs",
+    "description": "Eldocs.net is a web application for NGOs where users can create & track projects.",
+    "responsibilities": "Back-end development, Front-end development",
+    "achievements": null
   },
   {
     "title": "Bella on Demand Concierge",
     "url": "https://bellaondemandconcierge.com",
     "subtitle": "Concierge application for Bella on Demand",
     "thumbnail": "/assets/img/bella-thumb.svg",
-    "description": "I worked on this project with a team of developers at Biznetx LLC. I was responsible for the development of the frontend. I also worked on the back-end code from time to time.",
-    "status": "COMPLETED"
+    "description": "I worked on this project with a team of developers at Biznetx LLC.",
+    "responsibilities": "Front-end development, Back-end development",
+    "achievements": null
   }
 ]
