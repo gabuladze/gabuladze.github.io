@@ -4,8 +4,12 @@
     "url": "https://play.google.com/store/apps/details?id=ge.org.gfa.gfa",
     "thumbnail": "/assets/img/agronavti-thumb.png",
     "subtitle": "Application for farmers",
-    "description": "Agronavti is a mobile app that allows Georgian farmers to obtain various agricultural information.",
-    "responsibilities": "Back-end development",
+    "description": "Agronavti is a mobile app that allows Georgian farmers to obtain various agricultural information. I worked on this project at Biznetx LLC.",
+    "responsibilities": [
+      "Maintained existing codebase and implemented new functionality on the back-end.",
+      "Provided API reference & documentation to mobile app developers.",
+      "Interacted regularly with managers to answer any technical questions/issues."
+    ],
     "achievements": [
       {
         "name": "Active Users",
@@ -18,14 +22,23 @@
     "url": "https://wenu.io",
     "thumbnail": "/assets/img/wenu-thumb.png",
     "subtitle": "Ordering made simple",
-    "description": "Wenu is a suit of mobile & web applications that replaces classic paper menus and allows users to book tables, make orders, etc.",
-    "responsibilities": "Mostly back-end development, Occasianally front-end development",
+    "description": "Wenu is a suit of mobile & web applications that replaces classic paper menus and allows users to book tables, make orders, etc. I worked on this project at Biznetx LLC.",
+    "responsibilities": [
+      "Made the back-end easily extendible by rewriting and refactoring the existing codebase.",
+      "Implemented new functionality on the back-end.",
+      "Set up staging and production environments on the server.",
+      "Provided API reference & documentation to mobile app developers.",
+      "Interacted regularly with managers to address any technical questions/issues."
+    ],
     "achievements": [
       {
         "name": "Active Users",
         "value": "> 4k"
       },
-      { "name": "", "value": "Won 100,000 ₾ in GITA's startup matching grants program" },
+      {
+        "name": "",
+        "value": "Won 100,000 ₾ in GITA's startup matching grants program"
+      },
       {
         "name": "",
         "value": "Was chosen by the USAID Economic Security Program to receive tailored assistance from a top global accelerator in Silicon Valley"
@@ -37,8 +50,13 @@
     "url": "https://evintage.io",
     "thumbnail": "/assets/img/vintage-thumb.png",
     "subtitle": "Digital flea market",
-    "description": "Vintage is a mobile app that allows users to sell & buy stuff easily.",
-    "responsibilities": "Mostly back-end development, Occasianally front-end development",
+    "description": "Vintage is a mobile app that allows users to sell & buy stuff easily. I worked on this project at Biznetx LLC.",
+    "responsibilities": [
+      "Designed, developed and maintained the back-end.",
+      "Provided API reference & documentation to front-end developers.",
+      "Occasionally worked on linking frontend components with the backend.",
+      "Interacted regularly with managers and users to address any technical questions/issues."
+    ],
     "achievements": [
       {
         "name": "Active Users",
@@ -51,8 +69,13 @@
     "url": "https://eth-price.com",
     "thumbnail": "/assets/img/eth-price-thumb.png",
     "subtitle": "Cryptocurrency dashboard with realtime statistics",
-    "description": "Eth-price is a cryptocurrency price dashboard with realtime statistics.",
-    "responsibilities": "Back-end development, Front-end development",
+    "description": "Eth-price is a cryptocurrency price dashboard with realtime statistics. I worked on this project at Biznetx LLC.",
+    "responsibilities": [
+      "Designed, developed and maintained the back-end.",
+      "Provided API reference & documentation to front-end developers.",
+      "Implementing server side rendering for React frontend, thus improving the SEO performance.",
+      "Interacted regularly with managers to address any technical questions/issues."
+    ],
     "achievements": null
   },
   {
@@ -60,8 +83,10 @@
     "url": "https://play.google.com/store/apps/details?id=com.tbrf",
     "thumbnail": "/assets/img/tbilisibrf-thumb.png",
     "subtitle": "Mobile app for Tbilisi B&RF participants",
-    "description": "Tbilisi B&RF is an app made specifically for Tbilisi B&RF. It allowed the forum participants to book meetings with each other, see the agenda, etc.",
-    "responsibilities": "Back-end development, Front-end development",
+    "description": "Tbilisi B&RF is an app made specifically for Tbilisi B&RF. It allowed the forum participants to book meetings with each other, see the agenda, etc. I worked on this project at Biznetx LLC.",
+    "responsibilities": [
+      "Designed and implemented the chat module of the app. (Backend + React Native Frontend)"
+    ],
     "achievements": null
   },
   {
@@ -69,8 +94,12 @@
     "url": "https://eldocs.net",
     "thumbnail": "/assets/img/eldocs-thumb.png",
     "subtitle": "Project management app for NGOs",
-    "description": "Eldocs.net is a web application for NGOs where users can create & track projects.",
-    "responsibilities": "Back-end development, Front-end development",
+    "description": "Eldocs.net is a web application for NGOs where users can create & track projects. I worked on this project at Biznetx LLC.",
+    "responsibilities": [
+      "Designed, developed and maintained the back-end.",
+      "Provided API reference & documentation to front-end developers.",
+      "Interacted regularly with managers the customer to address any technical questions/issues."
+    ],
     "achievements": null
   },
   {
@@ -78,8 +107,12 @@
     "url": "https://bellaondemandconcierge.com",
     "subtitle": "Concierge application for Bella on Demand",
     "thumbnail": "/assets/img/bella-thumb.svg",
-    "description": "I worked on this project with a team of developers at Biznetx LLC.",
-    "responsibilities": "Front-end development, Back-end development",
+    "description": "I worked on this project at Biznetx LLC.",
+    "responsibilities": [
+      "Coded provided design template in React.",
+      "Implemented payment functionality with Stripe on backend.",
+      "Interacted regularly with managers and the customer to address any technical questions/issues."
+    ],
     "achievements": null
   }
 ]

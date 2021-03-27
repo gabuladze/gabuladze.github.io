@@ -17,7 +17,13 @@ permalink: /portfolio
           <img src="{{ site.baseUrl }}{{ project.thumbnail }}" alt="{{ project.title }}" />
           <div>
             <p>{{ project.description }}</p>
-            <p><h5>MY RESPONSIBILITIES:</h5> {{ project.responsibilities }}</p>
+            <p><h5>MY RESPONSIBILITIES:</h5> 
+              <ul>
+                {% for responsibility in project.responsibilities %}
+                <li>{{ responsibility }}</li>
+                {% endfor %}
+              </ul>
+            </p>
             {% if project.achievements != null %}
             <h5>ACHIEVEMENTS:</h5>
             <ul>
