@@ -21,7 +21,7 @@ keywords: "tech,geek,programming,linux,personal,nodejs,javascript,neo4j,mariadb,
 author: "Giorgi Abuladze"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: abuthegeek
+twitter_username: gabuladze_
 github_username:  gabuladze
 collections:
   projects:
