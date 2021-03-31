@@ -1,7 +1,7 @@
 ---
 layout: post
 ---
-_The code snippets in the post use web3.js, decimal.js and assume that you are connected to a geth node._
+_The code snippets in this post use web3.js, decimal.js and assume that you are connected to a geth node._
 
 
 | ![Ethereum transactions stuck on pending](/assets/blog/posts/2021-03-31-handling-stuck-ethereum-transactions/stuck-txs.png) |
@@ -22,14 +22,14 @@ Therefore, this is how the transaction fees are calculated in a nutshell: `gasNe
 ## The solutions
 ### Try to calculate optimal gas prices to avoid transactions getting stuck
 This is the first step in fixing the problem for future transactions. For this purpose you could use:
-* [Etherscan's gastracker API](https://etherscan.io/apis#gastracker)
+* [Etherscan's gas tracker API](https://etherscan.io/apis#gastracker)
 * Record gas prices from last N blocks, calculate the average and add a small cushion.
 * Or If you don't care too much about the fee amount and just want to transfer a quickly as possible, just multiply the gasPrice received from your ethereum client by some number.
 
-**Note: The methods below do not guarantee that the last submitted transaction will b processed. It just increases the probability! Therefore, for reliable transaction handling, every transaction has to be tracked!**
+**Note: The methods below do not guarantee that the last submitted transaction will be processed. It just increases the probability! Therefore, for reliable transaction handling, every transaction has to be tracked!**
 
 ### Replace pending transaction with same transaction but with higher gas price
-As you might have seen Ethereum transactions that belong to single account execute in strict order. This order is controlled by the `nonce` value of transaction.   
+As you might have seen Ethereum transactions that belong to one account execute in strict order. This order is controlled by the `nonce` value of the transaction.   
 In order to increase the probability of a transaction getting confirmed you can:
 * Fetch the transaction data with 
 ```
