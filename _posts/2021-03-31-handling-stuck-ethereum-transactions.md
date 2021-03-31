@@ -22,7 +22,7 @@ Therefore, this is how the transaction fees are calculated in a nutshell: `gasNe
 ## The solutions
 ### Try to calculate optimal gas prices to avoid transactions getting stuck
 This is the first step in fixing the problem for future transactions. For this purpose you could use:
-* [Etherscan's gas tracker API](https://etherscan.io/apis#gastracker)
+* [Etherscan's gas tracker API](https://etherscan.io/apis#gastracker){:target="_blank"}
 * Record gas prices from last N blocks, calculate the average and add a small cushion.
 * Or If you don't care too much about the fee amount and just want to transfer a quickly as possible, just multiply the gasPrice received from your ethereum client by some number.
 
