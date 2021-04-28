@@ -23,13 +23,14 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: gabuladze_
 github_username:  gabuladze
+linkedin_username: giorgiabuladze
 collections:
   projects:
     output: true
     permalink: '/portfolio/:path'
 # Build settings
 # markdown: kramdown
-theme: jekyll-theme-minimal
+theme: minima
 plugins:
   - jekyll-feed
 defaults:
