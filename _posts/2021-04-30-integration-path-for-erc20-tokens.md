@@ -91,7 +91,7 @@ web3.eth
             if (error) console.log('logs subscription error ', error.stack);
         }
     ).on('data',
-        (log) => console.log(‘Received transfer log:’, log)
+        (log) => console.log('Received transfer log:', log)
     );
 ```
 If you want to listen to all topics just omit the topics parameter.
