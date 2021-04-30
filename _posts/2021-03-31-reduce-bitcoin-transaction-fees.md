@@ -47,3 +47,4 @@ This can be achieved by sending a transaction from your wallet again to your wal
 ---
 ##### Further reading:
 * [Techniques to reduce transaction fees](https://en.bitcoin.it/wiki/Techniques_to_reduce_transaction_fees){:target="_blank"}
+* [How to cheaply consolidate coins to reduce miner fees](https://en.bitcoin.it/wiki/How_to_cheaply_consolidate_coins_to_reduce_miner_fees){:target="_blank"}
