@@ -6,7 +6,7 @@
     "subtitle": "Crypto wallet, Payment API and Invoice generator",
     "description": "Paybitx allows users and merchants to receive/send funds in several cryptocurrencies. I worked on this project at Biznetx LLC.",
     "responsibilities": [
-      "Designed and implemented a suite of microservices for: <br>Monitoring & processing Bitcoin, Ethereum, Ripple, Stellar, ERC token (Tether, Uniswap, LINK, USD Coin, VeChain, Binance USD, chiliZ, Synthetix Network Token, EnjinCoin, Maker, ZRX, OmiseGO) transactions. <br>Generating and processing invoices for all available coins",
+      "Designed and implemented a suite of microservices for: <br>Monitoring & processing Bitcoin, Ethereum, Ripple, Stellar, ERC token (Tether, Uniswap, LINK, USD Coin, VeChain, Binance USD, chiliZ, Synthetix Network Token, EnjinCoin, Maker, ZRX, OmiseGO, Shiba Inu) transactions. <br>Generating and processing invoices for all available coins",
       "Reduced Bitcoin transaction fees by leveraging the number of inputs & outputs of a transaction.",
       "Improved user experience for Ethereum withdrawals by implementing transaction resubmit mechanism to avoid stuck ETH transactions from a single account.",
       "Provided gateway API reference & documentation to front-end developers.",
