@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: crypto btc
+categories: crypto btc
 ---
 
 As you might know Bitcoin uses the UTXO model, which means that the inputs for each transaction are the unspent outputs of previous transactions.

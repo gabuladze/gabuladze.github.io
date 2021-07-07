@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: crypto eth
+categories: crypto eth
 ---
 _The code snippets in this post use web3.js, decimal.js and assume that you are connected to a geth node._
 

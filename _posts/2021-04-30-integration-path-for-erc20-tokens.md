@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: crypto eth erc20 usdt
+categories: crypto eth erc20
 ---
 _The code snippets in this post use web3.js and assume that you are connected to a geth node._
 
