@@ -1,5 +1,5 @@
 * {
-  font-family: "Helvetica", "Roboto", sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 
 html,
@@ -9,11 +9,7 @@ body {
 
 body {
   margin: 0;
-}
-
-a {
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.7);
+  background-color: #071921;
 }
 
 ul.navbar {
@@ -36,8 +32,8 @@ ul.navbar li:last-child {
 
 ul.navbar li a {
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 1.5em;
+  color: rgb(255, 255, 255);
+  font-size: 1.25em;
   text-transform: lowercase;
 }
 
@@ -45,18 +41,8 @@ ul.navbar li a.active {
   text-transform: uppercase;
 }
 
-.header ul.navbar li a {
-  font-size: 1em;
-}
-
 ul.navbar li a:hover {
-  color: rgba(0, 0, 0, 0.8);
-}
-
-div.header {
-  justify-content: center;
-  align-items: center;
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.03);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 div.container {
@@ -68,24 +54,8 @@ div.align-center {
   align-items: center;
 }
 
-div.justify-start {
-  justify-content: start;
-}
-
 div.justify-center {
   justify-content: center;
-}
-
-div.self-align-center {
-  align-self: center;
-}
-
-div.self-justify-center {
-  justify-self: center;
-}
-
-div.padding-20 {
-  padding: 0 20px;
 }
 
 div.column {
@@ -94,109 +64,10 @@ div.column {
   flex-direction: column;
 }
 
-div.row {
-  flex-direction: row;
-  width: 90%;
-}
-
-div.scrollable {
-  overflow: scroll;
-  overflow-x: hidden;
-}
-
-p.about-text {
-  text-align: justify;
-}
-
-div.bg {
-  background: rgba(0, 0, 0, 0.05);
-}
-
 div.container h1.landing {
   font-size: 3em;
   text-align: center;
-}
-
-form.contact-form {
-  width: 90%;
-}
-
-.contact-form input,
-textarea {
-  display: block;
-  width: 100%;
-  margin-bottom: 15px;
-  border: 0;
-  padding: 5px;
-}
-
-.contact-form input {
-  height: 40px;
-}
-
-.contact-form textarea {
-  height: 200px;
-  resize: none;
-}
-
-.contact-form button {
-  background: rgba(0, 0, 0, 0.1);
-  font-size: 1em;
-  text-transform: uppercase;
-  padding: 20px;
-  cursor: pointer;
-  border: 1px solid rgba(0, 0, 0, 0.03);
-}
-
-.contact-form button:hover {
-  background: rgba(0, 0, 0, 0.2);
-}
-
-div.projects-container {
-  width: 90%;
-}
-
-div.project-card {
-  background-color: rgba(255, 255, 255, 1);
-  padding: 15px;
-  border-radius: 5px;
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.03);
-  margin-bottom: 15px;
-}
-
-div.project-card a {
-  margin-bottom: 0;
-}
-
-div.project-card h2 {
-  margin-top: 0;
-  margin-bottom: 5px;
-}
-
-div.project-card p {
-  margin-top: 0;
-  margin-bottom: 15px;
-  text-align: justify;
-}
-
-div.project-card img {
-  max-width: 150px;
-  max-height: 150px;
-  margin-right: 20px;
-}
-
-div.project-card h5 {
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-div.project-card ul {
-  margin-top: 5px;
-}
-
-div.project-card div.row.project {
-  display: flex;
-  width: 100%;
+  color: rgb(255, 255, 255);
 }
 
 @media screen and (max-width: 1200px) {
@@ -211,17 +82,5 @@ div.project-card div.row.project {
 
   div.header {
     flex: 0.3;
-  }
-
-  div.project-card img {
-    margin-right: 0px;
-    margin-bottom: 20px;
-  }
-
-  div.project-card div.row.project {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
   }
 }
