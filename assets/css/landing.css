@@ -10,6 +10,7 @@ body {
 body {
   margin: 0;
   background-color: #071921;
+  color: rgb(255, 255, 255);
 }
 
 ul.navbar {
@@ -35,10 +36,6 @@ ul.navbar li a {
   color: rgb(255, 255, 255);
   font-size: 1.25em;
   text-transform: lowercase;
-}
-
-ul.navbar li a.active {
-  text-transform: uppercase;
 }
 
 ul.navbar li a:hover {
@@ -67,20 +64,10 @@ div.column {
 div.container h1.landing {
   font-size: 3em;
   text-align: center;
-  color: rgb(255, 255, 255);
 }
 
-@media screen and (max-width: 1200px) {
-  div.container {
-    flex-flow: column;
-    height: 100vh;
-  }
-
-  div.column {
-    flex: 1;
-  }
-
-  div.header {
-    flex: 0.3;
-  }
+div.container p {
+  text-align: center;
+  /* margin-top: 150px; */
+  align-self: center;
 }
