@@ -25,10 +25,6 @@ twitter_username: gabuladze_
 github_username:  gabuladze
 linkedin_username: giorgiabuladze
 google_analytics: 'G-V7KFY1M5Z3'
-collections:
-  projects:
-    output: true
-    permalink: '/portfolio/:path'
 # Build settings
 # markdown: kramdown
 theme: minima
