@@ -16,8 +16,8 @@
 title: Giorgi Abuladze's personal website
 email: itisabu@gmail.com
 description: >- # this means to ignore newlines until next config var
-  Back-end developer, Tech enthusiast 
-keywords: "tech,geek,programming,linux,personal,nodejs,javascript,neo4j,mariadb,postgresql,postgres,sql,cypher,php,html,css,es6,backend,frontend,fullstack"
+  Developer
+keywords: "tech,programming,linux,nodejs,javascript,mariadb,postgresql,postgres,sql,backend,blockchain,ethereum,bitcoin,solidity"
 author: "Giorgi Abuladze"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
