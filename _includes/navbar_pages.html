@@ -1,8 +1,24 @@
-<ul class='navbar'>
-  <li>
-    <a href="https://www.linkedin.com/in/giorgiabuladze/" target="_blank">linkedin</a>
-  </li>
-  <li>
-    <a href="{{ site.baseUrl }}{% link blog.html %}" target="_blank">blog</a>
-  </li>
+<ul class="navbar">
+    <li>
+        <a
+            href="{{ site.baseUrl }}{% link about.html %}"
+            class="{% if page.url == '/about' %}active{% endif %}"
+            >About</a
+        >
+    </li>
+    <li>
+        <a
+            href="{{ site.baseUrl }}{% link portfolio.html %}"
+            class="{% if page.url == '/portfolio' %}active{% endif %}"
+            >Portfolio</a
+        >
+    </li>
+    <li>
+        <a
+            href="{{ site.baseUrl }}{% link dev-notes.html %}"
+            target="_blank"
+            class="{% if page.url == '/dev-notes' %}active{% endif %}"
+            >dev notes</a
+        >
+    </li>
 </ul>
