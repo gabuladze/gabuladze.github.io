@@ -22,9 +22,13 @@ author: "Giorgi Abuladze"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: gabuladze_
-github_username:  gabuladze
+github_username: gabuladze
 linkedin_username: giorgiabuladze
-google_analytics: 'G-V7KFY1M5Z3'
+google_analytics: "G-V7KFY1M5Z3"
+collections:
+  projects:
+    output: true
+    permalink: "/portfolio/:path"
 # Build settings
 # markdown: kramdown
 theme: minima
