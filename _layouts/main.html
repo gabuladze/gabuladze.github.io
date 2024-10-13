@@ -13,13 +13,20 @@
         />
         <link
             rel="stylesheet"
-            href="{{ 'assets/css/landing.css' | relative_url }}"
+            href="{{ 'assets/css/pico.min.css' | relative_url }}"
+        />
+        <link
+            rel="stylesheet"
+            href="{{ 'assets/css/main.css' | relative_url }}"
         />
         <title>{{ site.title }}</title>
         {% seo %}
     </head>
 
     <body>
+        {% if page.url != "/" %} <header class="container">{% include navbar.html %}</header> {% endif %}
+        <div class="{% if page.url == '/' %}landing-container{% else %}container{% endif %}">
         {{content}}
+        </div>
     </body>
 </html>
