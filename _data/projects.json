@@ -1,5 +1,38 @@
 [
   {
+    "title": "Chiliz Chain",
+    "url": "https://github.com/chiliz-chain/v2",
+    "thumbnail": "/assets/img/chiliz-chain-thumb.png",
+    "subtitle": "L1 chain built for sports",
+    "description": "Chiliz Chain is an EVM layer 1, PoSA chain with on-chain governance.",
+    "myRole": "I worked on maintaining and improving the system's smart contracts, and the Dragon8 hard fork.",
+    "stack": "Go, Solidity, Javascript, Docker",
+    "company": "Chiliz",
+    "achievements": "The chain processes over 50k transactions daily."
+  },
+  {
+    "title": "Chiliz Chain Governance dApp",
+    "url": "https://governance.chilizchain.com/",
+    "thumbnail": "/assets/img/chiliz-chain-thumb.png",
+    "subtitle": "Governance & staking UI",
+    "description": "The dApp provides an easy-to-use UI that lets users stake or unstake their CHZ on the validators, track and claim their staking rewards, and participate in on-chain voting.",
+    "myRole": "I designed and built the back end that indexes the blockchain and provides a REST API for the front end. I also occasionally worked on the front-end components.",
+    "stack": "Typescript, Nodejs, PostgreSQL, React, Docker",
+    "company": "Chiliz",
+    "achievements": null
+  },
+  {
+    "title": "Chiliz Bridge",
+    "url": "https://bridge.chiliz.com/transfer",
+    "thumbnail": "/assets/img/chiliz-chain-thumb.png",
+    "subtitle": "Bridge between Chiliz Chain <-> Ethereum",
+    "description": "Chiliz Bridge is a two-way bridge that allows users to transfer their CHZ between the Chiliz Chain and Ethereum networks.",
+    "myRole": "I improved the bridge relayer software and smart contracts by adding support for ERC20 to native currency transfers and for EIP-1559.",
+    "stack": "Go, Solidity, Typescript, Nodejs, React, Docker",
+    "company": "Chiliz",
+    "achievements": null
+  },
+  {
     "title": "Paybitx",
     "url": "https://paybitx.com",
     "thumbnail": "/assets/img/paybitx-thumb.png",
