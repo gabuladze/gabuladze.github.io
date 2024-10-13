@@ -2,12 +2,15 @@
 layout: main
 ---
 
-<div class="container align-center justify-center">
-    <div class="column">
-        <hgroup class="landing">
-            <h1>Giorgi Abuladze</h1>
-            <small>Software Engineer</small>
-        </hgroup>
-        {% include navbar_pages.html %}
+<div >
+    <hgroup>
+        <h1>Giorgi Abuladze</h1>
+        <small>Software Engineer</small>
+    </hgroup>
+
+    <div style="display: flex; flex-direction: column;">
+        <a href="{{ site.baseUrl }}{% link about.html %}">About</a>
+        <a href="{{ site.baseUrl }}{% link portfolio.html %}">Portfolio</a>
+        <a href="{{ site.baseUrl }}{% link dev-notes.html %}">dev notes</a>
     </div>
 </div>

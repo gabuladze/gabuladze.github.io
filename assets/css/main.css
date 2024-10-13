@@ -1,0 +1,23 @@
+* {
+    font-family: "Outfit", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.landing-container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
