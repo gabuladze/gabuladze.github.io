@@ -117,6 +117,6 @@
     "description": "Tbilisi B&RF was an app made specifically for the Tbilisi B&RF event. It allowed forum participants to chat or book meetings with each other, view the agenda, and explore interesting locations within the city where they could hold business meetings or just relax.",
     "stack": "Javascript, NodeJs, MongoDB, React Native, Socket.io",
     "company": "Biznetx",
-    "myRole": "Designed and implemented the chat module of the app. (Back end + React Native Front end)"
+    "myRole": "I designed and implemented the chat module of the app. (Back end + React Native Front end)"
   }
 ]
