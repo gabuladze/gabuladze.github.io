@@ -1,0 +1,24 @@
+<nav>
+    <ul>
+        <li>
+            <a href="/" class="contrast"><strong>GA</strong></a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a href="{{ site.baseUrl }}{% link about.html %}" {% if page.url == '/about' %}aria-current="page"{% endif %}>
+                About
+            </a>
+        </li>
+        <li>
+            <a href="{{ site.baseUrl }}{% link portfolio.html %}" {% if page.url == '/portfolio' %}aria-current="page"{% endif %}>
+                Portfolio
+            </a>
+        </li>
+        <li>
+            <a href="{{ site.baseUrl }}{% link dev-notes.html %}" {% if page.url == '/dev-notes' %}aria-current="page"{% endif %}>
+                dev notes
+            </a>
+        </li>
+    </ul>
+</nav>
