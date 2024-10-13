@@ -1,18 +1,13 @@
 [
   {
     "title": "Paybitx",
-    "url": "",
-    "thumbnail": null,
-    "subtitle": "Crypto wallet, Payment API and Invoice generator",
-    "description": "Paybitx allows users and merchants to receive/send funds in several cryptocurrencies. I worked on this project at Biznetx LLC.",
-    "responsibilities": [
-      "Designed and implemented a suite of microservices for: <br>Monitoring & processing Bitcoin, Ethereum, Ripple, Stellar, ERC token (Tether, Uniswap, LINK, USD Coin, VeChain, Binance USD, chiliZ, Synthetix Network Token, EnjinCoin, Maker, ZRX, OmiseGO, Shiba Inu) transactions. <br>Generating and processing invoices for all available coins",
-      "Reduced Bitcoin transaction fees by leveraging the number of inputs & outputs of a transaction.",
-      "Improved user experience for Ethereum withdrawals by implementing transaction resubmit mechanism to avoid stuck ETH transactions from a single account.",
-      "Provided gateway API reference & documentation to front-end developers.",
-      "Provided microservice API reference & documentation to back-end developers.",
-      "Interacted regularly with managers to answer any technical questions/issues."
-    ],
+    "url": "https://paybitx.com",
+    "thumbnail": "/assets/img/paybitx-thumb.png",
+    "subtitle": "Crypto bank with custodial web wallet, simple REST API and invoice generator for ecommerce merchants.",
+    "description": "Built as a competitor to CoinPayments.net, it provides a clean abstraction over multiple blockchain networks and enables its users to seamlessly send and receive payments, as well as generate invoices in over 15 cryptocurrencies through its web UI or REST API. It's perfect for individuals or businesses who want to transact in crypto without extra hassle.",
+    "myRole": "I was responsible for everything related to the back end. I designed and built a suite of services for monitoring and processing transactions in Bitcoin, Ethereum, Ripple, Stellar, and ERC tokens (including Tether, Uniswap, LINK, USD Coin, VeChain, Binance USD, chiliZ, Synthetix Network Token, EnjinCoin, Maker, ZRX, OmiseGO, and Shiba Inu), generating and processing invoices for all available currencies, managing user authentication, and developing the gateway REST API.",
+    "stack": "Javascript, NodeJs, PostgreSQL, Docker, k8s",
+    "company": "Biznetx",
     "achievements": null
   },
   {
@@ -20,92 +15,65 @@
     "url": "",
     "thumbnail": null,
     "subtitle": "Web application for monitoring & processing crypto payments.",
-    "description": "Internal web application, that allows different project teams to monitor & process crypto payments across multiple payment providers. I worked on this project at Biznetx LLC.",
-    "responsibilities": [
-      "Designed and implemented the back end.",
-      "Designed and implemented the front end.",
-      "Provided API reference & documentation to other project teams.",
-      "Interacted regularly with managers to discuss the requirements across different project teams."
-    ],
+    "description": "An internal app that allowed us at Biznetx to process crypto payments across multiple providers such as Paybitx and CoinPayments.net. The app provided a simple web UI where managers could view all incoming and outgoing transactions, including those that failed or got stuck, and manually reconcile them from the UI if needed.",
+    "stack": "Javascript, NodeJs, PostgreSQL, Docker, k8s",
+    "company": "Biznetx",
+    "myRole": "I was responsible for building and maintaining the app. I designed and built the back end in JavaScript and the front end in EJS, regularly interacted with managers to discuss requirements across different project teams, provided documentation, and handled urgent incidents in production.",
     "achievements": null
-  },
-  {
-    "title": "Agronavti",
-    "url": "https://play.google.com/store/apps/details?id=ge.org.gfa.gfa",
-    "thumbnail": "/assets/img/agronavti-thumb.png",
-    "subtitle": "Application for farmers",
-    "description": "Agronavti is a mobile app that allows Georgian farmers to obtain various agricultural information. I worked on this project at Biznetx LLC.",
-    "responsibilities": [
-      "Maintained existing codebase and implemented new functionality on the back-end.",
-      "Provided API reference & documentation to mobile app developers.",
-      "Interacted regularly with managers to answer any technical questions/issues."
-    ],
-    "achievements": [
-      {
-        "name": "Active Users",
-        "value": "> 4k"
-      }
-    ]
   },
   {
     "title": "Wenu",
     "url": "https://wenu.io",
     "thumbnail": "/assets/img/wenu-thumb.png",
     "subtitle": "Ordering made simple",
-    "description": "Wenu is a suit of mobile & web applications that replaces classic paper menus and allows users to book tables, make orders, etc. I worked on this project at Biznetx LLC.",
-    "responsibilities": [
-      "Made the back-end easily extendible by rewriting and refactoring the existing codebase.",
-      "Implemented new functionality on the back end.",
-      "Set up staging and production environments on the server.",
-      "Provided API reference & documentation to mobile app developers.",
-      "Interacted regularly with managers to address any technical questions/issues."
-    ],
-    "achievements": [
-      {
-        "name": "Active Users",
-        "value": "> 4k"
-      },
-      {
-        "name": "",
-        "value": "Won 100,000 ₾ in GITA's startup matching grants program"
-      },
-      {
-        "name": "",
-        "value": "Was chosen by the USAID Economic Security Program to receive tailored assistance from a top global accelerator in Silicon Valley"
-      }
-    ]
+    "description": "Wenu is a suite of mobile and web applications that helps restaurants digitize their interaction with customers by providing digital menus that customers can interact with by scanning a QR code at the table, adding items to their cart, and ordering and paying with their debit or credit card. The platform gained the most traction during the COVID pandemic, as reusable paper menus were banned for a few months in Georgia.",
+    "stack": "Javascript, NodeJs, PHP, PostgreSQL, Docker",
+    "company": "Biznetx",
+    "myRole": "I was primarily responsible for the back end but occasionally worked on some front-end components. I also provided documentation to front-end and mobile developers and handled urgent incidents in production.",
+    "achievements": "The project won 100,000 ₾ in GITA's Startup Matching Grants Program and was chosen by the USAID Economic Security Program to receive tailored assistance from a top global accelerator in Silicon Valley. By the time I left Biznetx, Wenu was being used by 5 restaurants and more than 3.5k users."
+  },
+  {
+    "title": "Agronavti",
+    "url": "https://play.google.com/store/apps/details?id=ge.org.gfa.gfa",
+    "thumbnail": "/assets/img/agronavti-thumb.png",
+    "subtitle": "Mobile app for farmers",
+    "description": "Agronavti is a mobile app that allows Georgian farmers to obtain news and various information to aid planning and managing their farming business.",
+    "stack": "HTML, CSS, PHP, MariaDB",
+    "company": "Biznetx",
+    "myRole": "I was responsible for maintaining and improving the back end, as well as providing API reference and documentation to mobile app developers.",
+    "achievements": "The app had over 4k active users. Unfortunately, it looks like the project got abandoned."
   },
   {
     "title": "Vintage",
     "url": "https://evintage.io",
     "thumbnail": "/assets/img/vintage-thumb.png",
-    "subtitle": "Digital flea market",
-    "description": "Vintage is a mobile app that allows users to sell & buy stuff easily. I worked on this project at Biznetx LLC.",
-    "responsibilities": [
-      "Designed, developed and maintained the back end.",
-      "Provided API reference & documentation to front-end developers.",
-      "Occasionally worked on linking frontend components with the backend.",
-      "Interacted regularly with managers and users to address any technical questions/issues."
-    ],
-    "achievements": [
-      {
-        "name": "Active Users",
-        "value": "> 40k"
-      }
-    ]
+    "subtitle": "P2P location based digital flea market",
+    "description": "Vintage was a mobile app that allowed people to buy and sell items. The app's main feature was the ability to sort items by distance, so users would see only items available in the local market.",
+    "stack": "Javascript, NodeJs, MariaDB, React Native",
+    "company": "Biznetx",
+    "myRole": "I was primarily responsible for everything related to the back end but occasionally worked on the front end as well. I also provided documentation to front-end developers and handled urgent incidents in production",
+    "achievements": "By the time I left Biznetx, the app had over 40k registered users. Unfortunately, the project got discontinued."
+  },
+  {
+    "title": "Eldocs.net",
+    "url": "https://eldocs.net",
+    "thumbnail": "/assets/img/eldocs-thumb.png",
+    "subtitle": "Project management app for NGOs",
+    "description": "Eldocs.net is a web application for Georgian NGOs where they can create & track projects.",
+    "stack": "Javascript, NodeJs, MariaDB, React",
+    "company": "Biznetx",
+    "myRole": "I was primarily responsible for everything related to the back end but occasionally worked on the front end as well. I also provided documentation to front-end developers and handled urgent incidents in production",
+    "achievements": "By the time I left Biznetx, we had onboarded 1 NGO."
   },
   {
     "title": "Eth-price",
     "url": "https://eth-price.com",
     "thumbnail": "/assets/img/eth-price-thumb.png",
     "subtitle": "Cryptocurrency dashboard with realtime statistics",
-    "description": "Eth-price is a cryptocurrency price dashboard with realtime statistics. I worked on this project at Biznetx LLC.",
-    "responsibilities": [
-      "Designed, developed and maintained the back end.",
-      "Provided API reference & documentation to front-end developers.",
-      "Implementing server side rendering for React front end, thus improving the SEO performance.",
-      "Interacted regularly with managers to address any technical questions/issues."
-    ],
+    "description": "A simple dashboard where users could see real-time price data for 150+ cryptocurrencies. The data was aggregated from multiple sources such as CoinMarketCap, CoinGecko, and centralized exchanges like Poloniex and Binance.",
+    "stack": "Javascript, NodeJs, MongoDB, React, Socket.io",
+    "company": "Biznetx",
+    "myRole": "I was primarily responsible for everything related to the back end. I also implemented server-side rendering for our React front end to improve SEO. Unfortunately, we dropped the project because we didn't have enough resources to keep it running, and it didn't generate revenue.",
     "achievements": null
   },
   {
@@ -113,36 +81,9 @@
     "url": "https://play.google.com/store/apps/details?id=com.tbrf",
     "thumbnail": "/assets/img/tbilisibrf-thumb.png",
     "subtitle": "Mobile app for Tbilisi B&RF participants",
-    "description": "Tbilisi B&RF is an app made specifically for Tbilisi B&RF. It allowed the forum participants to book meetings with each other, see the agenda, etc. I worked on this project at Biznetx LLC.",
-    "responsibilities": [
-      "Designed and implemented the chat module of the app. (Back end + React Native Front end)"
-    ],
-    "achievements": null
-  },
-  {
-    "title": "Eldocs.net",
-    "url": "https://eldocs.net",
-    "thumbnail": "/assets/img/eldocs-thumb.png",
-    "subtitle": "Project management app for NGOs",
-    "description": "Eldocs.net is a web application for NGOs where users can create & track projects. I worked on this project at Biznetx LLC.",
-    "responsibilities": [
-      "Designed, developed and maintained the back end.",
-      "Provided API reference & documentation to front-end developers.",
-      "Interacted regularly with managers the customer to address any technical questions/issues."
-    ],
-    "achievements": null
-  },
-  {
-    "title": "Bella on Demand Concierge",
-    "url": "https://bellaondemandconcierge.com",
-    "subtitle": "Concierge application for Bella on Demand",
-    "thumbnail": "/assets/img/bella-thumb.svg",
-    "description": "I worked on this project at Biznetx LLC.",
-    "responsibilities": [
-      "Coded provided design template in React.",
-      "Implemented payment functionality with Stripe on backend.",
-      "Interacted regularly with managers and the customer to address any technical questions/issues."
-    ],
-    "achievements": null
+    "description": "Tbilisi B&RF was an app made specifically for the Tbilisi B&RF event. It allowed forum participants to chat or book meetings with each other, view the agenda, and explore interesting locations within the city where they could hold business meetings or just relax.",
+    "stack": "Javascript, NodeJs, MongoDB, React Native, Socket.io",
+    "company": "Biznetx",
+    "myRole": "Designed and implemented the chat module of the app. (Back end + React Native Front end)"
   }
 ]
