@@ -4,24 +4,31 @@ permalink: /portfolio
 ---
 
 <div>
-    <h3>Portfolio</h3>
-
-    <div>
-        {% for project in site.data.projects %}
-        <div>
-            <a href="{{ project.url }}"><h2>{{ project.title }}</h2></a>
-            <p>{{ project.subtitle }}</p>
-            {% if project.thumbnail != null %}
-            <img
-                src="{{ site.baseUrl }}{{ project.thumbnail }}"
-                alt="{{ project.title }}"
-            />
+    {% for project in site.data.projects %}
+        <article>
+            <hgroup>
+                <h2>{{ project.title }}</h2>
+                <small>{{ project.subtitle }}</small>
+            </hgroup>
+            <small>Stack: {{ project.stack }}</small>
+            {% if project.url != null %}
+                <br/>
+                <small>URL: <a href="{{ project.url }}" target="_blank" rel="nofollow noopener noreferrer">{{project.url}}</a></small>
             {% endif %}
-            <p>{{ project.stack }}</p>
-            <p>{{ project.description }}</p>
-            <p>{{ project.myRole }}</p>
-            <p>{{ project.achievements }}</p>
-        </div>
-    </div>
+            <div style="display: flex; margin-top: 10px;">
+                {% if project.thumbnail != null %}
+                    <img
+                        src="{{ site.baseUrl }}{{ project.thumbnail }}"
+                        alt="{{ project.title }}"
+                        style="align-self: center; max-width: 200px; margin-right: 20px; margin-bottom: 20px;"
+                    />
+                {% endif %}
+                <div>
+                    <p>{{ project.description }}</p>
+                    <p>{{ project.myRole }}</p>
+                    <p>{{ project.achievements }}</p>
+                </div>
+            </div>
+        </article>
     {% endfor %}
 </div>
