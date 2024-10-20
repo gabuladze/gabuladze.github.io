@@ -21,3 +21,17 @@ a {
     align-items: center;
     justify-content: center;
 }
+
+.portfolio-project-content {
+    margin-top: 10px;
+}
+
+.portfolio-project-content img {
+    float: left;
+    max-width: 200px;
+    margin: 10px;
+}
+
+.portfolio-project-content p {
+    text-align: justify;
+}
