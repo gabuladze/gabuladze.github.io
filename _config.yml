@@ -16,14 +16,13 @@
 title: Giorgi Abuladze's personal website
 email: itisabu@gmail.com
 description: >- # this means to ignore newlines until next config var
-  Software Engineer
+  Software engineer from Tbilisi, Georgia, with over six years of experience.
 keywords: "tech,programming,linux,nodejs,javascript,mariadb,postgresql,postgres,sql,backend,blockchain,ethereum,bitcoin,solidity"
-author: "Giorgi Abuladze"
+author:
+  name: Giorgi Abuladze
+  email: itisabu@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: gabuladze_
-github_username: gabuladze
-linkedin_username: giorgiabuladze
 google_analytics: "G-V7KFY1M5Z3"
 collections:
   projects:
@@ -31,7 +30,18 @@ collections:
     permalink: "/portfolio/:path"
 # Build settings
 # markdown: kramdown
-theme: minima
+# theme: minima
+remote_theme: jekyll/minima
+header_pages:
+  - about.html
+  - portfolio.html
+  - dev-notes.html
+minima:
+  skin: dark
+  social_links:
+     - { platform: linkedin,       user_url: "https://www.linkedin.com/in/giorgiabuladze" }
+     - { platform: github,         user_url: "https://github.com/gabuladze" }
+     - { platform: telegram,       user_url: "https://t.me/gabuladze" }
 plugins:
   - jekyll-feed
 defaults:
