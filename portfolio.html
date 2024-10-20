@@ -16,12 +16,11 @@ permalink: /portfolio
                 <br/>
                 <small>URL: <a href="{{ project.url }}" target="_blank" rel="nofollow noopener noreferrer">{{project.url}}</a></small>
             {% endif %}
-            <div style="display: flex; margin-top: 10px;">
+            <div class="portfolio-project-content">
                 {% if project.thumbnail != null %}
                     <img
                         src="{{ site.baseUrl }}{{ project.thumbnail }}"
                         alt="{{ project.title }}"
-                        style="align-self: center; max-width: 200px; margin-right: 20px; margin-bottom: 20px;"
                     />
                 {% endif %}
                 <div>
