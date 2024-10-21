@@ -37,7 +37,7 @@ header_pages:
   - portfolio.html
   - dev-notes.html
 minima:
-  skin: dark
+  skin: auto
   social_links:
      - { platform: linkedin,       user_url: "https://www.linkedin.com/in/giorgiabuladze" }
      - { platform: github,         user_url: "https://github.com/gabuladze" }
