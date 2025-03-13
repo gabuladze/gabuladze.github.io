@@ -1,7 +1,7 @@
 [
   {
     "title": "ERC20 Token Staking Smart Contract",
-    "url": "https://chiliscan.com/address/0x5ff7f9724fd477d9a07dcdb894d0ca7f8fae1501",
+    "url": "https://chiliscan.com/address/0x57C9f5Cb5dce57e06eD4293e9f5416a53759B580/contract/88888/code",
     "thumbnail": "/assets/img/chiliz-chain-thumb.png",
     "subtitle": "",
     "description": "An upgradable smart contract used at Socios.com and Peppercoin. At Socios, this contract is at the core of the redesigned Socios.com Wallet and is essential for fully engaging with everything the app offers, such as earning Reward Points, unlocking exclusive voting access, and maximizing the utility of Fan Tokens. At Peppercoin, it enables $PEPPER holders to participate in the on-chain governance of the Pepper Inc. DAO.",
