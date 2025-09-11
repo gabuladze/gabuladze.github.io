@@ -1,14 +1,14 @@
 [
   {
-    "title": "ERC20 Token Staking Smart Contract",
-    "url": "https://chiliscan.com/address/0x57C9f5Cb5dce57e06eD4293e9f5416a53759B580/contract/88888/code",
-    "thumbnail": "/assets/img/chiliz-chain-thumb.png",
+    "title": "Munchly: AI recipe generator",
+    "url": "https://munchly.app",
+    "thumbnail": "/assets/img/munchly-thumb.png",
     "subtitle": "",
-    "description": "An upgradable smart contract used at Socios.com and Peppercoin. At Socios, this contract is at the core of the redesigned Socios.com Wallet and is essential for fully engaging with everything the app offers, such as earning Reward Points, unlocking exclusive voting access, and maximizing the utility of Fan Tokens. At Peppercoin, it enables $PEPPER holders to participate in the on-chain governance of the Pepper Inc. DAO.",
-    "myRole": "I worked closely with stakeholders to design and build the smart contract and collaborated with engineers from other teams to integrate it with the projects.",
-    "stack": "Solidity, Foundry",
-    "company": "Chiliz",
-    "achievements": ">$2m TVL across both projects."
+    "description": "Munchly is an iOS app I vibe-coded from idea to launch — an AI-powered recipe generator that helps health-conscious people quickly create healthy, tasty meals. Built with React Native, Firebase, and OpenAI’s API, it features ingredient-based recipe generation, dietary customization, and unlimited favorites/history, all wrapped in a clean, minimalistic UX.",
+    "myRole": "",
+    "stack": "React Native, Firebase",
+    "company": "Blockwise LLC",
+    "achievements": ""
   },
   {
     "title": "Chiliz Chain",
@@ -16,10 +16,21 @@
     "thumbnail": "/assets/img/chiliz-chain-thumb.png",
     "subtitle": "L1 chain built for sports",
     "description": "Chiliz Chain is an EVM layer 1, PoSA chain with on-chain governance.",
-    "myRole": "I worked on maintaining and improving the system's smart contracts, and the Dragon8 hard fork.",
+    "myRole": "I work on maintaining and improving the client software (Geth), the system’s smart contracts, and hard forks as part of my job at Chiliz",
     "stack": "Go, Solidity, Javascript, Docker",
     "company": "Chiliz",
     "achievements": "The chain processes over 50k transactions daily."
+  },
+  {
+    "title": "ERC20 Token Staking Smart Contract",
+    "url": "https://chiliscan.com/address/0x5FF7f9724Fd477d9a07DCdb894d0CA7F8FAe1501/contract/88888/readProxyContract",
+    "thumbnail": "/assets/img/chiliz-chain-thumb.png",
+    "subtitle": "",
+    "description": "An upgradable smart contract used at Socios.com and Peppercoin. At Socios, this contract is at the core of the redesigned Socios.com Wallet and is essential for fully engaging with everything the app offers, such as earning Reward Points, unlocking exclusive voting access, and maximizing the utility of Fan Tokens. At Peppercoin, it enables $PEPPER holders to participate in the on-chain governance of the Pepper Inc. DAO.",
+    "myRole": "I worked closely with stakeholders at Chiliz to design and build the smart contract and collaborated with engineers from other teams to integrate it with the projects.",
+    "stack": "Solidity, Foundry",
+    "company": "Chiliz",
+    "achievements": ">$2m TVL across both projects."
   },
   {
     "title": "Chiliz Chain Governance dApp",
@@ -27,7 +38,7 @@
     "thumbnail": "/assets/img/chiliz-chain-thumb.png",
     "subtitle": "Governance & staking UI",
     "description": "The dApp provides an easy-to-use UI that lets users stake or unstake their CHZ on the validators, track and claim their staking rewards, and participate in on-chain voting.",
-    "myRole": "I designed and built the back end that indexes the blockchain and provides a REST API for the front end. I also occasionally worked on the front-end components.",
+    "myRole": "As part of my job at Chiliz, I designed and built the back end that indexes the blockchain and provides a REST API for the front end. I also occasionally worked on front-end components.",
     "stack": "Typescript, Nodejs, PostgreSQL, React, Docker",
     "company": "Chiliz",
     "achievements": null
@@ -38,7 +49,7 @@
     "thumbnail": "/assets/img/chiliz-chain-thumb.png",
     "subtitle": "Bridge between Chiliz Chain <-> Ethereum",
     "description": "Chiliz Bridge is a two-way bridge that allows users to transfer their CHZ between the Chiliz Chain and Ethereum networks.",
-    "myRole": "I improved the bridge relayer software and smart contracts by adding support for ERC20 to native currency transfers and for EIP-1559.",
+    "myRole": "One of the first projects I worked on at Chiliz was improving the bridge relayer software and smart contracts by adding support for ERC20-to-native currency transfers and for EIP-1559.",
     "stack": "Go, Solidity, Typescript, Nodejs, React, Docker",
     "company": "Chiliz",
     "achievements": null

@@ -24,14 +24,21 @@ a {
 
 .portfolio-project-content {
     margin-top: 10px;
+    overflow: hidden;
 }
 
 .portfolio-project-content img {
     float: left;
     max-width: 200px;
-    margin: 10px;
+    margin: 10px 10px 10px 0;
 }
 
 .portfolio-project-content p {
     text-align: justify;
+}
+
+.portfolio-project-content::after {
+    content: "";
+    display: table;
+    clear: both;
 }
