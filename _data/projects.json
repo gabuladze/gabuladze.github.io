@@ -1,5 +1,16 @@
 [
   {
+    "title": "Ripasso: Memorize anything, effortlessly",
+    "url": "https://ripasso.app",
+    "thumbnail": "/assets/img/ripasso-thumb.png",
+    "subtitle": "",
+    "description": "Ripasso is an iOS app I built for myself to keep up with memorization — vocabulary, facts, anything I want to retain long-term. It sends a notification roughly every hour during the day with something to review, picking items based on the priority I set. Built with SwiftUI, Core Data, and iCloud sync.",
+    "myRole": "",
+    "stack": "SwiftUI",
+    "company": "Blockwise LLC",
+    "achievements": ""
+  },
+  {
     "title": "Munchly: AI recipe generator",
     "url": "https://munchly.app",
     "thumbnail": "/assets/img/munchly-thumb.png",
