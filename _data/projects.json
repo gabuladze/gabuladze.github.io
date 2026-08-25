@@ -1,144 +1,65 @@
 [
   {
-    "title": "Ripasso: Memorize anything, effortlessly",
-    "url": "https://ripasso.app",
-    "thumbnail": "/assets/img/ripasso-thumb.png",
-    "subtitle": "",
-    "description": "Ripasso is an iOS app I built for myself to keep up with memorization — vocabulary, facts, anything I want to retain long-term. It sends a notification roughly every hour during the day with something to review, picking items based on the priority I set. Built with SwiftUI, Core Data, and iCloud sync.",
-    "myRole": "",
-    "stack": "SwiftUI",
-    "company": "Blockwise LLC",
-    "achievements": ""
-  },
-  {
     "title": "Chiliz Chain",
+    "subtitle": "Layer 1 public blockchain built for sports",
     "url": "https://github.com/chiliz-chain/v2",
     "thumbnail": "/assets/img/chiliz-chain-thumb.png",
-    "subtitle": "L1 chain built for sports",
-    "description": "Chiliz Chain is an EVM layer 1, PoSA chain with on-chain governance.",
-    "myRole": "I work on maintaining and improving the client software (Geth), the system’s smart contracts, and hard forks as part of my job at Chiliz",
     "stack": "Go, Solidity, Javascript, Docker",
     "company": "Chiliz",
-    "achievements": "The chain processes over 50k transactions daily."
+    "description": "An EVM layer 1 with proof-of-staked-authority consensus and on-chain governance. I work on the Geth-based client software and the hard forks it ships."
   },
   {
-    "title": "ERC20 Token Staking Smart Contract",
-    "url": "https://chiliscan.com/address/0x5FF7f9724Fd477d9a07DCdb894d0CA7F8FAe1501/contract/88888/readProxyContract",
+    "title": "Chiliz Chain Governance",
+    "subtitle": "Staking and voting for CHZ holders",
+    "url": "https://governance.chiliz.com/",
     "thumbnail": "/assets/img/chiliz-chain-thumb.png",
-    "subtitle": "",
-    "description": "An upgradable smart contract used at Socios.com and Peppercoin. At Socios, this contract is at the core of the redesigned Socios.com Wallet and is essential for fully engaging with everything the app offers, such as earning Reward Points, unlocking exclusive voting access, and maximizing the utility of Fan Tokens. At Peppercoin, it enables $PEPPER holders to participate in the on-chain governance of the Pepper Inc. DAO.",
-    "myRole": "I worked closely with stakeholders at Chiliz to design and build the smart contract and collaborated with engineers from other teams to integrate it with the projects.",
-    "stack": "Solidity, Foundry",
+    "stack": null,
     "company": "Chiliz",
-    "achievements": ">$2m TVL across both projects."
-  },
-  {
-    "title": "Chiliz Chain Governance dApp",
-    "url": "https://governance.chilizchain.com/",
-    "thumbnail": "/assets/img/chiliz-chain-thumb.png",
-    "subtitle": "Governance & staking UI",
-    "description": "The dApp provides an easy-to-use UI that lets users stake or unstake their CHZ on the validators, track and claim their staking rewards, and participate in on-chain voting.",
-    "myRole": "As part of my job at Chiliz, I designed and built the back end that indexes the blockchain and provides a REST API for the front end. I also occasionally worked on front-end components.",
-    "stack": "Typescript, Nodejs, PostgreSQL, React, Docker",
-    "company": "Chiliz",
-    "achievements": null
+    "description": "Stake CHZ on validators, track and claim rewards, and vote on chain proposals. I built the first version: the indexers, the API and the frontend. The frontend has changed a great deal since."
   },
   {
     "title": "Chiliz Bridge",
+    "subtitle": "Two-way bridge between Chiliz Chain and Ethereum",
     "url": "https://bridge.chiliz.com/transfer",
     "thumbnail": "/assets/img/chiliz-chain-thumb.png",
-    "subtitle": "Bridge between Chiliz Chain <-> Ethereum",
-    "description": "Chiliz Bridge is a two-way bridge that allows users to transfer their CHZ between the Chiliz Chain and Ethereum networks.",
-    "myRole": "One of the first projects I worked on at Chiliz was improving the bridge relayer software and smart contracts by adding support for ERC20-to-native currency transfers and for EIP-1559.",
     "stack": "Go, Solidity, Typescript, Nodejs, React, Docker",
     "company": "Chiliz",
-    "achievements": null
+    "description": "Moves CHZ between Chiliz Chain and Ethereum. I forked ChainBridge and modified it into what Chiliz runs in production, then cut its transaction fees by about 15% by moving the relayers onto EIP-1559 pricing."
+  },
+  {
+    "title": "Staking Smart Contract",
+    "subtitle": "Solidity, holding over $2M of user funds",
+    "url": "https://chiliscan.com/address/0x5FF7f9724Fd477d9a07DCdb894d0CA7F8FAe1501/contract/88888/readProxyContract",
+    "thumbnail": "/assets/img/chiliz-chain-thumb.png",
+    "stack": "Solidity, Foundry",
+    "company": "Chiliz",
+    "description": "Sits under the redesigned Socios.com wallet, where staking unlocks reward points and voting access, and under Pepper Inc. DAO governance for $PEPPER holders. I designed and built it. No security incidents."
+  },
+  {
+    "title": "Ripasso",
+    "subtitle": "Memorize anything, effortlessly",
+    "url": "https://ripasso.app",
+    "thumbnail": "/assets/img/ripasso-thumb.png",
+    "stack": "Swift, SwiftUI",
+    "company": "Blockwise LLC",
+    "description": "Ripasso is an iOS app I built for myself to keep up with memorization — vocabulary, facts, anything I want to retain long-term. It sends a notification roughly every hour during the day with something to review, picking items based on the priority I set. Built with SwiftUI, Core Data, and iCloud sync."
   },
   {
     "title": "Paybitx",
+    "subtitle": "Crypto payments for merchants",
     "url": "https://paybitx.com",
     "thumbnail": "/assets/img/paybitx-thumb.png",
-    "subtitle": "Crypto bank with custodial web wallet, simple REST API and invoice generator for ecommerce merchants.",
-    "description": "A startup we built at Biznetx as a competitor to CoinPayments.net, it provides a clean abstraction over multiple blockchain networks and enables its users to seamlessly send and receive payments, as well as generate invoices in over 15 cryptocurrencies through its web UI or REST API. It's perfect for individuals or businesses who want to transact in crypto without extra hassle.",
-    "myRole": "I was responsible for everything related to the back end. I designed and built a suite of services for monitoring and processing transactions in Bitcoin, Ethereum, Ripple, Stellar, and ERC tokens (including Tether, Uniswap, LINK, USD Coin, VeChain, Binance USD, chiliZ, Synthetix Network Token, EnjinCoin, Maker, ZRX, OmiseGO, and Shiba Inu), generating and processing invoices for all available currencies, managing user authentication, and developing the gateway REST API.",
-    "stack": "Javascript, NodeJs, PostgreSQL, Docker, k8s",
+    "stack": "Javascript, NodeJs, PostgreSQL, Docker",
     "company": "Biznetx",
-    "achievements": null
-  },
-  {
-    "title": "Crypto Billing System",
-    "url": "",
-    "thumbnail": null,
-    "subtitle": "Web application for monitoring & processing crypto payments.",
-    "description": "An internal app that allowed us at Biznetx to process crypto payments across multiple providers such as Paybitx and CoinPayments.net. The app provided a simple web UI where managers could view all incoming and outgoing transactions, including those that failed or got stuck, and manually reconcile them from the UI if needed.",
-    "stack": "Javascript, NodeJs, PostgreSQL, Docker, k8s",
-    "company": "Biznetx",
-    "myRole": "I was responsible for building and maintaining the app. I designed and built the back end in JavaScript and the front end in EJS, regularly interacted with managers to discuss requirements across different project teams, provided documentation, and handled urgent incidents in production.",
-    "achievements": null
+    "description": "A custodial web wallet, REST API and invoice generator covering 15+ cryptocurrencies, built as a competitor to CoinPayments.net. I owned the backend: transaction monitoring and processing, invoicing, authentication and the gateway API."
   },
   {
     "title": "Wenu",
+    "subtitle": "Ordering made simple",
     "url": "https://wenu.io",
     "thumbnail": "/assets/img/wenu-thumb.png",
-    "subtitle": "Ordering made simple",
-    "description": "Wenu, a startup we built at Biznetx, is a suite of mobile and web applications that helps restaurants digitize their interaction with customers by providing digital menus that customers can interact with by scanning a QR code at the table, adding items to their cart, and ordering and paying with their debit or credit card. The platform gained the most traction during the COVID pandemic, as reusable paper menus were banned for a few months in Georgia.",
-    "stack": "Javascript, NodeJs, PHP, PostgreSQL, Docker",
+    "stack": "Javascript, NodeJs, PostgreSQL, Docker",
     "company": "Biznetx",
-    "myRole": "I was primarily responsible for the back end but occasionally worked on some front-end components. I also provided documentation to front-end and mobile developers and handled urgent incidents in production.",
-    "achievements": "The project won 100,000 ₾ in GITA's Startup Matching Grants Program and was chosen by the USAID Economic Security Program to receive tailored assistance from a top global accelerator in Silicon Valley. By the time I left Biznetx, Wenu was being used by 5 restaurants and more than 3.5k users."
-  },
-  {
-    "title": "Agronavti",
-    "url": "https://play.google.com/store/apps/details?id=ge.org.gfa.gfa",
-    "thumbnail": "/assets/img/agronavti-thumb.png",
-    "subtitle": "Mobile app for farmers",
-    "description": "Agronavti, a project we built at Biznetx, is a mobile app that allows Georgian farmers to obtain news and various information to aid planning and managing their farming business.",
-    "stack": "HTML, CSS, PHP, MariaDB",
-    "company": "Biznetx",
-    "myRole": "I was responsible for maintaining and improving the back end, as well as providing API reference and documentation to mobile app developers.",
-    "achievements": "The app had over 4k active users. Unfortunately, it looks like the project got abandoned."
-  },
-  {
-    "title": "Vintage",
-    "url": "https://evintage.io",
-    "thumbnail": "/assets/img/vintage-thumb.png",
-    "subtitle": "P2P location based digital flea market",
-    "description": "Vintage, a startup we built at Biznetx, was a mobile app that allowed people to buy and sell items. The app's main feature was the ability to sort items by distance, so users would see only items available in the local market.",
-    "stack": "Javascript, NodeJs, MariaDB, React Native",
-    "company": "Biznetx",
-    "myRole": "I was primarily responsible for everything related to the back end but occasionally worked on the front end as well. I also provided documentation to front-end developers and handled urgent incidents in production",
-    "achievements": "By the time I left Biznetx, the app had over 40k registered users. Unfortunately, the project got discontinued."
-  },
-  {
-    "title": "Eldocs.net",
-    "url": "https://eldocs.net",
-    "thumbnail": "/assets/img/eldocs-thumb.png",
-    "subtitle": "Project management app for NGOs",
-    "description": "Eldocs.net, a project we built at Biznetx, is a web application for Georgian NGOs where they can create & track projects.",
-    "stack": "Javascript, NodeJs, MariaDB, React",
-    "company": "Biznetx",
-    "myRole": "I was primarily responsible for everything related to the back end but occasionally worked on the front end as well. I also provided documentation to front-end developers and handled urgent incidents in production",
-    "achievements": "By the time I left Biznetx, we had onboarded 1 NGO."
-  },
-  {
-    "title": "Eth-price.com",
-    "url": "https://eth-price.com",
-    "thumbnail": "/assets/img/eth-price-thumb.png",
-    "subtitle": "Cryptocurrency dashboard with realtime statistics",
-    "description": "Eth-price.com, a project we built at Biznetx, is a simple dashboard where users could see real-time price data for 150+ cryptocurrencies. The data was aggregated from multiple sources such as CoinMarketCap, CoinGecko, and centralized exchanges like Poloniex and Binance.",
-    "stack": "Javascript, NodeJs, MongoDB, React, Socket.io",
-    "company": "Biznetx",
-    "myRole": "I was primarily responsible for everything related to the back end. I also implemented server-side rendering for our React front end to improve SEO. Unfortunately, we dropped the project because we didn't have enough resources to keep it running, and it didn't generate revenue.",
-    "achievements": null
-  },
-  {
-    "title": "Tbilisi B&RF",
-    "url": "https://play.google.com/store/apps/details?id=com.tbrf",
-    "thumbnail": "/assets/img/tbilisibrf-thumb.png",
-    "subtitle": "Mobile app for Tbilisi B&RF participants",
-    "description": "Tbilisi B&RF, a project we built at Biznetx, was an app made specifically for the Tbilisi B&RF event. It allowed forum participants to chat or book meetings with each other, view the agenda, and explore interesting locations within the city where they could hold business meetings or just relax.",
-    "stack": "Javascript, NodeJs, MongoDB, React Native, Socket.io",
-    "company": "Biznetx",
-    "myRole": "I designed and implemented the chat module of the app. (Back end + React Native Front end)"
+    "description": "Contactless ordering for restaurants. Scan a QR code at the table, browse the menu on your phone, order and pay from it. I built the backend and the API the mobile and web clients ran on."
   }
 ]

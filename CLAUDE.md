@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Overview
 
-This is a personal website/portfolio built with Jekyll and hosted on GitHub Pages. It uses the `jekyll/minima` remote theme with a custom `main` layout that overrides the default theme layout.
+This is a personal website/portfolio built with Jekyll and hosted on GitHub Pages at `abula.dev`. It uses a custom `main` layout and Pico CSS; it does **not** use a Jekyll theme's layouts.
 
 ## Commands
 
@@ -21,21 +21,37 @@ bundle exec jekyll build
 
 Note: `_config.yml` is NOT reloaded automatically during `jekyll serve` — restart the server after any config changes.
 
+`_config.yml` sets `repository:` explicitly because this repo's git remote is named `github`, not `origin`. Without it, `jekyll-github-metadata` fails the build locally with "No repo name found."
+
 ## Architecture
 
-The site uses a **custom layout system** that does not rely on minima's default layouts:
-
-- `_layouts/main.html` — the primary layout used by all pages. Includes Pico CSS (`assets/css/pico.min.css`) and `assets/css/main.css`. Conditionally shows the navbar (hidden on `/`) and switches between `landing-container` and `container` CSS classes based on the current page URL.
-- `_layouts/post.html` — layout for blog posts in `_posts/`.
-- `_includes/navbar.html`, `header.html`, `google-analytics.html` — partial templates included by the layout.
+- `_layouts/main.html` — the only layout. Every page uses it. Includes Pico CSS (`assets/css/pico.min.css`) and `assets/css/main.css`. Conditionally shows the navbar (hidden on `/`) and switches between `landing-container` and `container` CSS classes based on the current page URL.
+- `_includes/navbar.html`, `google-analytics.html` — partial templates included by the layout.
 
 **Content sources:**
 
-- `_data/projects.json` — drives the portfolio page. Each entry has fields: `title`, `subtitle`, `url`, `thumbnail`, `stack`, `description`, `myRole`, `achievements`, `company`.
-- `_posts/` — Markdown blog posts (tech articles on blockchain/Node.js topics).
+- `_data/projects.json` — drives the portfolio page. Fields: `title`, `subtitle`, `url`, `thumbnail`, `stack`, `description`, `company`. `stack` may be `null` to omit the line.
+- `work.html` — **deliberately hand-written HTML, not data-driven.** A Liquid loop over a data file forces every entry through one template, which produces a uniform, machine-sounding rhythm. The prose on this page varies its structure on purpose. Do not convert it to a `_data` file.
 - `assets/css/main.css` — custom styles on top of Pico CSS.
 - `assets/img/` — project thumbnails referenced from `projects.json`.
 
-**Pages:** `index.html`, `about.html`, `portfolio.html`, `dev-notes.html` — all use `layout: main`.
+**Pages:** `index.html`, `about.html`, `work.html`, `portfolio.html`, `404.html` — all use `layout: main`.
+
+There is no blog. `_posts/`, `dev-notes.html` and `_layouts/post.html` were removed deliberately; the five old post URLs now 404. `jekyll-feed` is still auto-enabled by the `github-pages` gem, so an empty `/feed.xml` is emitted. Nothing links to it.
+
+`_config.yml` has an `exclude:` list. It is load-bearing: GitHub Pages auto-loads `jekyll-optional-front-matter`, which will publish any stray root `.md` file (including this one) as a live page unless excluded.
+
+## Writing standards for site copy
+
+Site copy follows a specific voice. Before editing any user-facing text, read the plan at `~/.claude/plans/` if present, or follow these rules:
+
+- Short sentences, plain English, active voice. Lead with what was built, not what was maintained.
+- At most one em dash per page. Vary sentence and paragraph length. No three-item lists as a default rhythm. Never repeat a `**claim** — explanation` template down a list.
+- Banned phrases: "end to end", "leveraged", "passionate about", "proven track record", "rapid learner", "solving complex challenges".
+- Keep crypto jargon but explain it inline. A backend engineer who has never touched a blockchain should be able to follow every sentence.
+- "nodes" is not a synonym for "validators". The chain has more nodes than validators.
+- Never state a hard fork count, the absolute value of the bridge fee saving, or which database backs any indexer.
+- Kubernetes is used via `kubectl` and OpenLens to inspect and debug running services. No cluster setup. Never write a bare `k8s` in a stack line.
+- The Ripasso description in `_data/projects.json` is owner-approved and stays verbatim.
 
 **Deployment:** Pushing to `master` triggers GitHub Pages to build and deploy automatically.

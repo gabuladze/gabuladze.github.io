@@ -6,12 +6,17 @@
     </ul>
     <ul>
         <li>
-            <a href="{{ site.baseUrl }}{% link about.html %}" {% if page.url == '/about' %}aria-current="page"{% endif %}>
+            <a href="{{ site.baseurl }}{% link about.html %}" {% if page.url == '/about' %}aria-current="page"{% endif %}>
                 About
             </a>
         </li>
         <li>
-            <a href="{{ site.baseUrl }}{% link portfolio.html %}" {% if page.url == '/portfolio' %}aria-current="page"{% endif %}>
+            <a href="{{ site.baseurl }}{% link work.html %}" {% if page.url == '/work' %}aria-current="page"{% endif %}>
+                Work
+            </a>
+        </li>
+        <li>
+            <a href="{{ site.baseurl }}{% link portfolio.html %}" {% if page.url == '/portfolio' %}aria-current="page"{% endif %}>
                 Portfolio
             </a>
         </li>

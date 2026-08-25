@@ -43,3 +43,32 @@ a {
     display: table;
     clear: both;
 }
+
+.portfolio-project-meta {
+    margin-top: 0.5rem;
+}
+
+.role {
+    margin-bottom: 3rem;
+}
+
+.role h2 {
+    margin-bottom: 0.25rem;
+}
+
+.role h3 {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.role p {
+    margin-bottom: 0.75rem;
+}
+
+.earlier-work {
+    margin-top: 0.75rem;
+}
+
+.earlier-work li {
+    margin-bottom: 0.5rem;
+}

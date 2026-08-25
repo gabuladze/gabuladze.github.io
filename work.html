@@ -1,0 +1,229 @@
+---
+layout: main
+title: Work
+permalink: /work
+---
+
+<div>
+    <hgroup>
+        <h1>Work</h1>
+        <small>What I've built, and why it needed building.</small>
+    </hgroup>
+
+    <section class="role">
+        <hgroup>
+            <h2>Chiliz</h2>
+            <small>Blockchain Engineer &middot; Remote &middot; February 2022 to present</small>
+        </hgroup>
+
+        <h3>Chiliz Chain</h3>
+        <p>
+            Chiliz Chain is a layer 1 public blockchain. I work in Go on the
+            client software, a fork of Geth, and on the hard forks it ships. A
+            hard fork is a network upgrade every node operator has to adopt at
+            the same block height, so there is no gradual rollout and no cheap
+            rollback.
+        </p>
+        <p>
+            This is continuous work rather than a project with an end date.
+            Areas have included the rules governing token issuance and the
+            mechanics of how validators get paid.
+        </p>
+
+        <h3>Health monitoring for the chain's validators</h3>
+        <p>
+            Chiliz Chain has 13 validators. Chiliz runs two of them. Partners
+            run the other eleven. That is the problem in one line: Chiliz is
+            accountable for the health of a network it mostly does not operate,
+            and it had no direct way to see inside it.
+        </p>
+        <p>
+            I built an OpenTelemetry exporter that pushes node metrics into
+            Datadog, and the dashboards the team reads them on. Validators are
+            the nodes that produce blocks and they are a subset of the nodes on
+            the chain, so this covers more machines than those thirteen.
+        </p>
+
+        <h3>Staking smart contract</h3>
+        <p>
+            I designed and built the staking contract used at Socios.com and
+            Peppercoin, in Solidity. It holds over $2M of user funds and has
+            had no security incidents.
+        </p>
+        <p>
+            Smart contracts are unusual to work on because deployment is close
+            to permanent. You cannot patch one the way you patch a service. So
+            most of the effort went into settling what the contract had to
+            guarantee before much of it was written.
+        </p>
+
+        <h3>Fireblocks MPC signing</h3>
+        <p>
+            I integrated Fireblocks MPC signing into the blockchain service
+            layer behind Socios.com. MPC signing splits a private key into
+            shares held by separate parties, so no single machine ever holds
+            the whole key. Good for custody. Not free in latency.
+        </p>
+        <p>
+            The latency showed up at peak hours. The signing service ran on a
+            cycle of roughly 300 milliseconds and handled one request per
+            cycle, so a single slow request blocked everything queued behind
+            it. Head-of-line blocking, in a queue whose head moves three times
+            a second. I changed it to handle three requests per cycle.
+        </p>
+        <p>
+            As far as I know, the service is no longer used in production.
+        </p>
+
+        <h3>governance.chiliz.com</h3>
+        <p>
+            I built the first version. That meant the indexers that read the
+            chain into a queryable shape, the API on top of them, and the
+            frontend people actually clicked on. It gives CHZ holders somewhere
+            to stake on validators and vote on chain proposals.
+        </p>
+        <p>
+            The frontend has been heavily modified since, so I would not claim
+            the site as it stands today. The indexers I wrote still run.
+        </p>
+
+        <h3>Chiliz Bridge</h3>
+        <p>
+            Chiliz runs a two-way bridge that moves CHZ between Chiliz Chain
+            and Ethereum. I built it by forking ChainBridge and modifying it.
+            Forking rather than starting over was the point: bridges are a
+            favourite target, and a codebase that has already survived contact
+            with production is hard to reproduce on a deadline.
+        </p>
+        <p>
+            Later I cut its transaction fees by about 15%. The relayers, the
+            processes that watch one chain and submit the matching transaction
+            on the other, were paying a flat gas price on everything. I moved
+            them to EIP-1559, which prices gas against current demand, so the
+            bridge stops overpaying when the network is quiet.
+        </p>
+
+        <h3>Bridge monitoring platform</h3>
+        <p>
+            The operations team needed to answer "where is my transfer"
+            without asking an engineer. I built them a platform for it. A
+            TypeScript indexer follows both sides of the bridge and records
+            what it sees; a REST API sits on top; a React dashboard shows every
+            transfer and where it currently is.
+        </p>
+
+        <h3>Cross-chain token deployment</h3>
+        <p>
+            I have deployed more than 60 tokens across Chiliz Chain, Base,
+            Solana and Robinhood Chain using LayerZero, which lets one token
+            exist on several chains and move between them.
+        </p>
+        <p>
+            The more useful half of that was making myself unnecessary. Each
+            deployment is a long sequence of steps that has to happen in order
+            and in the right places, and doing it by hand meant it could only
+            happen when I was free. I built CLI tooling that wraps the whole
+            sequence so people outside the team can run a deployment
+            themselves. It took about five days, working with Claude Code.
+        </p>
+    </section>
+
+    <section class="role">
+        <hgroup>
+            <h2>Biznetx</h2>
+            <small>Full-stack Developer &middot; Hybrid, Tbilisi &middot; July 2017 to February 2022</small>
+        </hgroup>
+
+        <h3>Crypto payment platform</h3>
+        <p>
+            I built and ran the crypto payment platform, on Node.js and
+            Express. It processed transactions across Bitcoin, Ethereum,
+            Ripple, Stellar and Tron. Each of those has its own idea of what a
+            transaction is, when it counts as final, and how it can fail. The
+            platform's job was to hide all of that behind one API.
+        </p>
+
+        <h3>Stuck withdrawals, handled automatically</h3>
+        <p>
+            A withdrawal gets stuck when it goes out with a fee the network no
+            longer thinks is worth mining. It just sits there. Someone had to
+            notice, find it, and resend it by hand.
+        </p>
+        <p>
+            I ended that. Withdrawals resend themselves now, with fees that
+            adjust to what the network is charging at the time. The manual work
+            went to zero.
+        </p>
+
+        <h3>Cheaper Bitcoin transactions</h3>
+        <p>
+            A Bitcoin fee depends on how large the transaction is in bytes, and
+            that depends on how many earlier payments you pull in to fund it. I
+            reworked how we chose those inputs and arranged the outputs, which
+            brought our fees down.
+        </p>
+
+        <h3>Internal operations dashboard</h3>
+        <p>
+            Managers needed to see payments without going through an engineer.
+            I built the dashboard they used daily, in Node.js, to track
+            transactions across all of those networks and dig into the ones
+            that failed or got stuck. It covered payments running through
+            outside providers too, so it was the one place to look instead of
+            one of several.
+        </p>
+
+        <h3>Wenu</h3>
+        <p>
+            Wenu is contactless ordering for restaurants. Scan a QR code at the
+            table, browse the menu on your phone, order and pay from it. I
+            built the backend and the API the mobile and web clients ran on.
+        </p>
+        <p>
+            It arrived at the right moment. Reusable paper menus were banned in
+            Georgia for part of the pandemic. Wenu won a &#8382;100,000 GITA
+            grant and reached more than 3,500 users across five restaurants.
+        </p>
+
+        <h3>Earlier work</h3>
+        <ul class="earlier-work">
+            <li>
+                <a href="https://evintage.io" target="_blank" rel="nofollow noopener noreferrer">Vintage</a>,
+                a location-based marketplace for buying and selling second-hand
+                items. I owned the backend. Over 40k registered users;
+                discontinued.
+            </li>
+            <li>
+                <a href="https://play.google.com/store/apps/details?id=ge.org.gfa.gfa" target="_blank" rel="nofollow noopener noreferrer">Agronavti</a>,
+                news and planning for Georgian farmers. Backend, plus the API
+                reference the mobile developers worked from. Over 4k active
+                users; looks abandoned now.
+            </li>
+            <li>
+                <a href="https://eth-price.com" target="_blank" rel="nofollow noopener noreferrer">Eth-price.com</a>,
+                a real-time dashboard for 150+ cryptocurrencies, aggregating
+                several exchanges and data providers. Backend, and
+                server-side rendering for the React frontend.
+            </li>
+            <li>
+                <a href="https://eldocs.net" target="_blank" rel="nofollow noopener noreferrer">Eldocs.net</a>,
+                project tracking for Georgian NGOs. Backend, and some of the
+                frontend.
+            </li>
+            <li>
+                <a href="https://play.google.com/store/apps/details?id=com.tbrf" target="_blank" rel="nofollow noopener noreferrer">Tbilisi B&amp;RF</a>,
+                an event app for forum attendees. I built the chat module, both
+                the backend and the React Native side.
+            </li>
+        </ul>
+    </section>
+
+    <section class="role">
+        <h2>How I work with infrastructure</h2>
+        <p>
+            Worth stating plainly, because job descriptions tend to blur it: I
+            use Kubernetes through kubectl and OpenLens to inspect and debug
+            running services. I have not set up clusters.
+        </p>
+    </section>
+</div>

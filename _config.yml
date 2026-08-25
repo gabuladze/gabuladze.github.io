@@ -1,70 +1,34 @@
 # Welcome to Jekyll!
 #
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
+# This config file is meant for settings that affect your whole site, values
+# which you are expected to set up once and rarely edit after that.
 #
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
 title: Giorgi Abuladze's personal website
 email: itisabu@gmail.com
 description: >- # this means to ignore newlines until next config var
-  Software engineer from Tbilisi, Georgia, with over six years of experience.
-keywords: "tech,programming,linux,nodejs,javascript,mariadb,postgresql,postgres,sql,backend,blockchain,ethereum,bitcoin,solidity"
+  Software engineer in Tbilisi, Georgia. Nine years building backend systems that move money.
+keywords: "tech,programming,backend,nodejs,javascript,typescript,go,golang,solidity,postgresql,blockchain,ethereum,bitcoin"
 author:
   name: Giorgi Abuladze
   email: itisabu@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://abula.dev" # the base hostname & protocol for your site
 google_analytics: "G-V7KFY1M5Z3"
-collections:
-  projects:
-    output: true
-    permalink: "/portfolio/:path"
-# Build settings
-# markdown: kramdown
-# theme: minima
-remote_theme: "jekyll/minima"
-minima:
-  skin: auto
-  social_links:
-    - title: Linkedin
-      icon: linkedin
-      url: "https://www.linkedin.com/in/giorgiabuladze"
-    - title: Github
-      icon: github
-      url: "https://github.com/gabuladze"
-    - title: Telegram
-      icon: telegram
-      url: "https://t.me/gabuladze"
-  nav_pages:
-    - about.html
-    - portfolio.html
-    - dev-notes.html
-plugins:
-  - jekyll-feed
-defaults:
-  - scope:
-      path: "assets/img"
-    values:
-      image: true
+repository: gabuladze/gabuladze.github.io
 github:
   is_project_page: false
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+
+# Keep working files out of the published site. Without this, the
+# jekyll-optional-front-matter plugin that GitHub Pages loads turns any
+# stray .md file in the repo root into a live page.
+exclude:
+  - CLAUDE.md
+  - notes.md
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

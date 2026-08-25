@@ -5,28 +5,32 @@ permalink: /portfolio
 ---
 
 <div>
+    <hgroup>
+        <h1>Portfolio</h1>
+        <small>Things you can go and look at. The reasoning behind them is on the <a href="{{ site.baseurl }}{% link work.html %}">work</a> page.</small>
+    </hgroup>
+
     {% for project in site.data.projects %}
         <article>
             <hgroup>
                 <h2>{{ project.title }}</h2>
                 <small>{{ project.subtitle }}</small>
             </hgroup>
-            <small>Stack: {{ project.stack }}</small>
-            {% if project.url != null %}
-                <br/>
-                <small>URL: <a href="{{ project.url }}" target="_blank" rel="nofollow noopener noreferrer">{{project.url}}</a></small>
-            {% endif %}
             <div class="portfolio-project-content">
-                {% if project.thumbnail != null %}
+                {% if project.thumbnail %}
                     <img
-                        src="{{ site.baseUrl }}{{ project.thumbnail }}"
+                        src="{{ site.baseurl }}{{ project.thumbnail }}"
                         alt="{{ project.title }}"
                     />
                 {% endif %}
                 <div>
                     <p>{{ project.description }}</p>
-                    <p>{{ project.myRole }}</p>
-                    <p>{{ project.achievements }}</p>
+                    <p class="portfolio-project-meta">
+                        {% if project.stack %}<small>Stack: {{ project.stack }}</small><br/>{% endif %}
+                        {% if project.url and project.url != "" %}
+                            <small><a href="{{ project.url }}" target="_blank" rel="nofollow noopener noreferrer">{{ project.url }}</a></small>
+                        {% endif %}
+                    </p>
                 </div>
             </div>
         </article>
