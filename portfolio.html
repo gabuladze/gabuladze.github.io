@@ -11,28 +11,31 @@ permalink: /portfolio
     </hgroup>
 
     {% for project in site.data.projects %}
-        <article>
-            <hgroup>
-                <h2>{{ project.title }}</h2>
-                <small>{{ project.subtitle }}</small>
-            </hgroup>
-            <div class="portfolio-project-content">
+        {% assign host = project.url | split: "//" | last | split: "/" | first %}
+        <div class="item">
+            <h3>{{ project.title }}</h3>
+            {% if project.subtitle and project.subtitle != "" %}
+                <p class="item-lede">{{ project.subtitle }}</p>
+            {% endif %}
+            <div class="project-body">
                 {% if project.thumbnail %}
-                    <img
-                        src="{{ site.baseurl }}{{ project.thumbnail }}"
-                        alt="{{ project.title }}"
-                    />
+                    <img src="{{ site.baseurl }}{{ project.thumbnail }}" alt="{{ project.title }}" />
                 {% endif %}
-                <div>
+                <div class="project-text">
                     <p>{{ project.description }}</p>
-                    <p class="portfolio-project-meta">
-                        {% if project.stack %}<small>Stack: {{ project.stack }}</small><br/>{% endif %}
-                        {% if project.url and project.url != "" %}
-                            <small><a href="{{ project.url }}" target="_blank" rel="nofollow noopener noreferrer">{{ project.url }}</a></small>
-                        {% endif %}
-                    </p>
+                    {% if project.stack %}
+                        <ul class="tags">
+                            {% assign techs = project.stack | split: "," %}
+                            {% for tech in techs %}<li>{{ tech | strip }}</li>{% endfor %}
+                        </ul>
+                    {% endif %}
+                    {% if project.url and project.url != "" %}
+                        <p class="item-link">
+                            <a href="{{ project.url }}" target="_blank" rel="nofollow noopener noreferrer">{{ host }} &#8599;</a>
+                        </p>
+                    {% endif %}
                 </div>
             </div>
-        </article>
+        </div>
     {% endfor %}
 </div>

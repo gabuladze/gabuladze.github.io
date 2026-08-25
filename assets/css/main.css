@@ -15,6 +15,10 @@ a {
     text-decoration: none;
 }
 
+.content {
+    padding-bottom: 5rem;
+}
+
 .landing-container {
     display: flex;
     height: 100%;
@@ -22,53 +26,103 @@ a {
     justify-content: center;
 }
 
-.portfolio-project-content {
-    margin-top: 10px;
-    overflow: hidden;
+.project-body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-start;
 }
 
-.portfolio-project-content img {
-    float: left;
-    max-width: 200px;
-    margin: 10px 10px 10px 0;
+.project-body img {
+    width: 160px;
+    flex: 0 0 auto;
     border-radius: 8px;
 }
 
-.portfolio-project-content p {
-    text-align: justify;
+.project-text {
+    flex: 1 1 20rem;
 }
 
-.portfolio-project-content::after {
-    content: "";
-    display: table;
-    clear: both;
+.item-link {
+    margin-top: 0.6rem;
+    font-size: 0.85rem;
 }
 
-.portfolio-project-meta {
-    margin-top: 0.5rem;
-}
+/* --- work page --- */
 
 .role {
-    margin-bottom: 3rem;
+    margin-bottom: 3.5rem;
 }
 
-.role h2 {
-    margin-bottom: 0.25rem;
+.role-header {
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--pico-muted-border-color);
 }
 
-.role h3 {
-    margin-top: 2rem;
-    margin-bottom: 0.5rem;
+.role-header h2 {
+    margin-bottom: 0.15rem;
 }
 
-.role p {
-    margin-bottom: 0.75rem;
+.role-header small {
+    color: var(--pico-muted-color);
+}
+
+.item {
+    margin-bottom: 2rem;
+    padding-left: 1.25rem;
+    border-left: 2px solid var(--pico-muted-border-color);
+}
+
+.item h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0.3rem;
+}
+
+.item p {
+    margin-bottom: 0.6rem;
+}
+
+.item-lede {
+    font-weight: 600;
+    color: var(--pico-color);
+}
+
+.item p:not(.item-lede) {
+    color: var(--pico-muted-color);
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin: 0.75rem 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.tags li {
+    margin: 0;
+    list-style: none;
+    padding: 0.1rem 0.5rem;
+    font-size: 0.75rem;
+    line-height: 1.6;
+    border-radius: 999px;
+    color: var(--pico-muted-color);
+    background: var(--pico-code-background-color);
 }
 
 .earlier-work {
-    margin-top: 0.75rem;
+    margin: 0.4rem 0 0;
+    padding-left: 1.1rem;
+    color: var(--pico-muted-color);
 }
 
 .earlier-work li {
     margin-bottom: 0.5rem;
+}
+
+.footnote {
+    color: var(--pico-muted-color);
+    font-size: 0.9rem;
 }

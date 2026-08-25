@@ -4,7 +4,7 @@
     "subtitle": "Layer 1 public blockchain built for sports",
     "url": "https://github.com/chiliz-chain/v2",
     "thumbnail": "/assets/img/chiliz-chain-thumb.png",
-    "stack": "Go, Solidity, Javascript, Docker",
+    "stack": "Go, Solidity, JavaScript, Docker",
     "company": "Chiliz",
     "description": "An EVM layer 1 with proof-of-staked-authority consensus and on-chain governance. I work on the Geth-based client software and the hard forks it ships."
   },
@@ -22,7 +22,7 @@
     "subtitle": "Two-way bridge between Chiliz Chain and Ethereum",
     "url": "https://bridge.chiliz.com/transfer",
     "thumbnail": "/assets/img/chiliz-chain-thumb.png",
-    "stack": "Go, Solidity, Typescript, Nodejs, React, Docker",
+    "stack": "Go, Solidity, TypeScript, Node.js, React, Docker",
     "company": "Chiliz",
     "description": "Moves CHZ between Chiliz Chain and Ethereum. I forked ChainBridge and modified it into what Chiliz runs in production, then cut its transaction fees by about 15% by moving the relayers onto EIP-1559 pricing."
   },
@@ -49,7 +49,7 @@
     "subtitle": "Crypto payments for merchants",
     "url": "https://paybitx.com",
     "thumbnail": "/assets/img/paybitx-thumb.png",
-    "stack": "Javascript, NodeJs, PostgreSQL, Docker",
+    "stack": "JavaScript, Node.js, PostgreSQL, Docker",
     "company": "Biznetx",
     "description": "A custodial web wallet, REST API and invoice generator covering 15+ cryptocurrencies, built as a competitor to CoinPayments.net. I owned the backend: transaction monitoring and processing, invoicing, authentication and the gateway API."
   },
@@ -58,7 +58,7 @@
     "subtitle": "Ordering made simple",
     "url": "https://wenu.io",
     "thumbnail": "/assets/img/wenu-thumb.png",
-    "stack": "Javascript, NodeJs, PostgreSQL, Docker",
+    "stack": "JavaScript, Node.js, PostgreSQL, Docker",
     "company": "Biznetx",
     "description": "Contactless ordering for restaurants. Scan a QR code at the table, browse the menu on your phone, order and pay from it. I built the backend and the API the mobile and web clients ran on."
   }

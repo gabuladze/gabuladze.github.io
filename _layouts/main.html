@@ -25,7 +25,7 @@
 
     <body>
         {% if page.url != "/" %} <header class="container">{% include navbar.html %}</header> {% endif %}
-        <div class="{% if page.url == '/' %}landing-container{% else %}container{% endif %}">
+        <div class="{% if page.url == '/' %}landing-container{% else %}container content{% endif %}">
         {{content}}
         </div>
     </body>
