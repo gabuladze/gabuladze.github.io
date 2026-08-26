@@ -31,10 +31,10 @@ Note: `_config.yml` is NOT reloaded automatically during `jekyll serve` — rest
 
 **Content sources:**
 
-- `_data/projects.json` — drives the portfolio page. Fields: `title`, `subtitle`, `url`, `thumbnail`, `stack`, `description`. `stack` may be `null` to omit the line. Every field is rendered by `portfolio.html`; do not add one the template ignores.
-- `work.html` — **deliberately hand-written HTML, not data-driven.** A Liquid loop over a data file forces every entry through one template, which produces a uniform, machine-sounding rhythm. The prose on this page varies its structure on purpose. Do not convert it to a `_data` file.
+- `work.html` and `portfolio.html` — **both deliberately hand-written HTML, not data-driven.** There is no `_data/` directory. A Liquid loop over a data file forces every entry through one template, which produces a uniform, machine-sounding rhythm; `work.html` varies its prose structure on purpose. Do not convert either page to a data file.
+- The two pages split the work: `work.html` carries the reasoning, `portfolio.html` is an index of things a visitor can click. A portfolio block is a thumbnail, an `<h3>`, one `item-lede` subtitle and the link — no description and no stack tags, because that material is on `work.html` and repeating it made the portfolio page contradict its own lede.
 - `assets/css/main.css` — custom styles on top of Pico CSS.
-- `assets/img/` — project thumbnails referenced from `projects.json`.
+- `assets/img/` — project thumbnails, referenced directly from `portfolio.html`. Only projects with a block on that page have an image; the "Earlier work" items on `work.html` are text links by design.
 
 **Pages:** `index.html`, `about.html`, `work.html`, `portfolio.html`, `404.html` — all use `layout: main`.
 
@@ -59,6 +59,5 @@ Site copy follows a specific voice. Before editing any user-facing text, read th
 - "nodes" is not a synonym for "validators". The chain has more nodes than validators.
 - Never state a hard fork count, the absolute value of the bridge fee saving, or which database backs any indexer.
 - Kubernetes is used via `kubectl` and OpenLens to inspect and debug running services. No cluster setup. Never write a bare `k8s` in a stack line.
-- The Ripasso description in `_data/projects.json` is owner-approved and stays verbatim.
 
 **Deployment:** Pushing to `master` triggers GitHub Pages to build and deploy automatically.
