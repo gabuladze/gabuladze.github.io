@@ -8,27 +8,29 @@
 
 # Site settings
 title: Giorgi Abuladze's personal website
-email: itisabu@gmail.com
 description: >- # this means to ignore newlines until next config var
   Software engineer in Tbilisi, Georgia. Nine years building backend systems that move money.
-keywords: "tech,programming,backend,nodejs,javascript,typescript,go,golang,solidity,postgresql,blockchain,ethereum,bitcoin"
 author:
   name: Giorgi Abuladze
   email: itisabu@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://abula.dev" # the base hostname & protocol for your site
-google_analytics: "G-V7KFY1M5Z3"
 repository: gabuladze/gabuladze.github.io
-github:
-  is_project_page: false
+
+# Without this, the github-pages gem defaults the theme to jekyll-theme-primer
+# and builds a 136 KB assets/css/style.css into the site that nothing links to.
+# Disabling the theme drops the github-pages plugin defaults too, so jekyll-seo-tag
+# (used by _layouts/main.html) has to be requested back explicitly.
+theme: null
+plugins:
+  - jekyll-seo-tag
 
 # Keep working files out of the published site. Without this, the
 # jekyll-optional-front-matter plugin that GitHub Pages loads turns any
 # stray .md file in the repo root into a live page.
 exclude:
   - CLAUDE.md
-  - notes.md
+  - README.md
   - Gemfile
   - Gemfile.lock
-  - README.md
   - vendor

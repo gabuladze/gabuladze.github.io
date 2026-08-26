@@ -5,7 +5,6 @@
     "url": "https://github.com/chiliz-chain/v2",
     "thumbnail": "/assets/img/chiliz-chain-thumb.png",
     "stack": "Go, Solidity, JavaScript, Docker",
-    "company": "Chiliz",
     "description": "An EVM layer 1 with proof-of-staked-authority consensus and on-chain governance. I work on the Geth-based client software and the hard forks it ships."
   },
   {
@@ -14,7 +13,6 @@
     "url": "https://governance.chiliz.com/",
     "thumbnail": "/assets/img/chiliz-chain-thumb.png",
     "stack": null,
-    "company": "Chiliz",
     "description": "Stake CHZ on validators, track and claim rewards, and vote on chain proposals. I built the first version: the indexers, the API and the frontend. The frontend has changed a great deal since."
   },
   {
@@ -23,7 +21,6 @@
     "url": "https://bridge.chiliz.com/transfer",
     "thumbnail": "/assets/img/chiliz-chain-thumb.png",
     "stack": "Go, Solidity, TypeScript, Node.js, React, Docker",
-    "company": "Chiliz",
     "description": "Moves CHZ between Chiliz Chain and Ethereum. I forked ChainBridge and modified it into what Chiliz runs in production, then cut its transaction fees by about 15% by moving the relayers onto EIP-1559 pricing."
   },
   {
@@ -32,7 +29,6 @@
     "url": "https://chiliscan.com/address/0x5FF7f9724Fd477d9a07DCdb894d0CA7F8FAe1501/contract/88888/readProxyContract",
     "thumbnail": "/assets/img/chiliz-chain-thumb.png",
     "stack": "Solidity, Foundry",
-    "company": "Chiliz",
     "description": "Sits under the redesigned Socios.com wallet, where staking unlocks reward points and voting access, and under Pepper Inc. DAO governance for $PEPPER holders. I designed and built it. No security incidents."
   },
   {
@@ -41,7 +37,6 @@
     "url": "https://ripasso.app",
     "thumbnail": "/assets/img/ripasso-thumb.png",
     "stack": "Swift, SwiftUI",
-    "company": "Blockwise LLC",
     "description": "Ripasso is an iOS app I built for myself to keep up with memorization — vocabulary, facts, anything I want to retain long-term. It sends a notification roughly every hour during the day with something to review, picking items based on the priority I set. Built with SwiftUI, Core Data, and iCloud sync."
   },
   {
@@ -50,7 +45,6 @@
     "url": "https://paybitx.com",
     "thumbnail": "/assets/img/paybitx-thumb.png",
     "stack": "JavaScript, Node.js, PostgreSQL, Docker",
-    "company": "Biznetx",
     "description": "A custodial web wallet, REST API and invoice generator covering 15+ cryptocurrencies, built as a competitor to CoinPayments.net. I owned the backend: transaction monitoring and processing, invoicing, authentication and the gateway API."
   },
   {
@@ -59,7 +53,6 @@
     "url": "https://wenu.io",
     "thumbnail": "/assets/img/wenu-thumb.png",
     "stack": "JavaScript, Node.js, PostgreSQL, Docker",
-    "company": "Biznetx",
     "description": "Contactless ordering for restaurants. Scan a QR code at the table, browse the menu on your phone, order and pay from it. I built the backend and the API the mobile and web clients ran on."
   }
 ]

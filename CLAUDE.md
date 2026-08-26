@@ -26,20 +26,27 @@ Note: `_config.yml` is NOT reloaded automatically during `jekyll serve` — rest
 ## Architecture
 
 - `_layouts/main.html` — the only layout. Every page uses it. Includes Pico CSS (`assets/css/pico.min.css`) and `assets/css/main.css`. Conditionally shows the navbar (hidden on `/`) and switches between `landing-container` and `container` CSS classes based on the current page URL.
-- `_includes/navbar.html`, `google-analytics.html` — partial templates included by the layout.
+- `_includes/navbar.html`, `google-analytics.html` — partial templates included by the layout. The GA measurement ID is hardcoded in the include, not read from `_config.yml`.
+- The layout emits no `<title>` of its own. `{% seo %}` writes it, which is what makes the per-page `title:` front matter take effect. Adding a second `<title>` silently wins over the seo one.
 
 **Content sources:**
 
-- `_data/projects.json` — drives the portfolio page. Fields: `title`, `subtitle`, `url`, `thumbnail`, `stack`, `description`, `company`. `stack` may be `null` to omit the line.
+- `_data/projects.json` — drives the portfolio page. Fields: `title`, `subtitle`, `url`, `thumbnail`, `stack`, `description`. `stack` may be `null` to omit the line. Every field is rendered by `portfolio.html`; do not add one the template ignores.
 - `work.html` — **deliberately hand-written HTML, not data-driven.** A Liquid loop over a data file forces every entry through one template, which produces a uniform, machine-sounding rhythm. The prose on this page varies its structure on purpose. Do not convert it to a `_data` file.
 - `assets/css/main.css` — custom styles on top of Pico CSS.
 - `assets/img/` — project thumbnails referenced from `projects.json`.
 
 **Pages:** `index.html`, `about.html`, `work.html`, `portfolio.html`, `404.html` — all use `layout: main`.
 
-There is no blog. `_posts/`, `dev-notes.html` and `_layouts/post.html` were removed deliberately; the five old post URLs now 404. `jekyll-feed` is still auto-enabled by the `github-pages` gem, so an empty `/feed.xml` is emitted. Nothing links to it.
+There is no blog. `_posts/`, `dev-notes.html` and `_layouts/post.html` were removed deliberately; the five old post URLs now 404. `jekyll-feed` is still in the `github-pages` gem's default plugin list, so the deployed site emits an empty `/feed.xml`. Nothing links to it.
 
-`_config.yml` has an `exclude:` list. It is load-bearing: GitHub Pages auto-loads `jekyll-optional-front-matter`, which will publish any stray root `.md` file (including this one) as a live page unless excluded.
+`_config.yml` sets `theme: null`, and it is load-bearing. With no `theme` key the `github-pages` gem defaults to `jekyll-theme-primer`, which builds a 136 KB `assets/css/style.css` into the site that nothing links to.
+
+Removing the theme also removes how `{% seo %}` used to load: locally, Jekyll requires a theme gem's `jekyll-*` runtime dependencies, and `jekyll-theme-primer` depends on `jekyll-seo-tag`. The site was getting its `<title>` and meta tags from a theme nobody chose. That is why `plugins:` now names `jekyll-seo-tag` explicitly — delete that line and the local build dies with "Unknown tag 'seo'".
+
+**Local and deployed builds no longer load the same plugins.** Locally you get exactly what `plugins:` lists. On GitHub Pages the gem unions that list with its own defaults, so `jekyll-feed`, `jekyll-optional-front-matter` and `jekyll-github-metadata` all still run there. The five real pages render identically either way; the difference shows up only as a stray `/feed.xml` and in how loose `.md` files are treated.
+
+The `exclude:` list is load-bearing for that last reason: GitHub Pages auto-loads `jekyll-optional-front-matter`, which will publish any stray root `.md` file (including this one) as a live page unless excluded.
 
 ## Writing standards for site copy
 
