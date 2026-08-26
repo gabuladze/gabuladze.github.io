@@ -26,26 +26,60 @@ a {
     justify-content: center;
 }
 
-.project-body {
-    display: flex;
-    flex-wrap: wrap;
+/* --- portfolio page --- */
+
+/* Cards, not rows. The work page owns .item / .item-lede; nothing here
+   touches those, so the two pages can drift apart freely. */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
     gap: 1rem;
-    align-items: flex-start;
+    margin-top: 2rem;
 }
 
-.project-body img {
-    width: 160px;
-    flex: 0 0 auto;
+.project {
+    display: flex;
+    flex-direction: column;
+    padding: 0.75rem;
+    border: 1px solid var(--pico-muted-border-color);
+    border-radius: 12px;
+    color: inherit;
+}
+
+.project:hover {
+    border-color: var(--pico-primary);
+}
+
+/* The thumbnails run from square to a 3:1 wordmark, so contain them on a
+   plate rather than cropping. object-fit: cover cuts the Paybitx logo in half. */
+.project img {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: contain;
+    padding: 0.5rem;
+    margin-bottom: 0.75rem;
     border-radius: 8px;
+    background: var(--pico-code-background-color);
 }
 
-.project-text {
-    flex: 1 1 20rem;
+.project h3 {
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
 }
 
-.item-link {
-    margin-top: 0.6rem;
+.project-sub {
+    margin-bottom: 0.75rem;
     font-size: 0.85rem;
+    color: var(--pico-muted-color);
+}
+
+/* Pushed to the bottom so the link lines up across a row of uneven cards. */
+.project-link {
+    margin-top: auto;
+    margin-bottom: 0;
+    font-size: 0.75rem;
+    color: var(--pico-muted-color);
 }
 
 /* --- work page --- */
