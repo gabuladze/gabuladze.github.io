@@ -94,8 +94,40 @@ a {
     border-bottom: 1px solid var(--pico-muted-border-color);
 }
 
+/* margin-top: 0 overrides Pico's top margin on a heading that follows a
+   <p>, which the Biznetx title (directly after .role-company) would get but
+   the Chiliz titles (wrapped in .role-line) wouldn't. */
 .role-header h2 {
+    margin-top: 0;
     margin-bottom: 0.15rem;
+}
+
+/* Company, location and total tenure as a small label above the titles.
+   The titles are what a recruiter reads; the company is context. */
+.role-company {
+    margin-bottom: 0.4rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--pico-muted-color);
+}
+
+/* One row per title, its dates on the right. Wraps on narrow screens so
+   the dates drop under the title. */
+.role-line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    column-gap: 1rem;
+}
+
+/* An earlier title at the same company: still a title, but the current
+   one leads. */
+.role-header h2.role-prior {
+    font-size: 1.25rem;
+    color: var(--pico-muted-color);
 }
 
 .role-header small {
